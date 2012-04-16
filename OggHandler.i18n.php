@@ -861,6 +861,7 @@ $messages['de'] = array(
 /** Zazaki (Zazaki)
  * @author AVRS
  * @author Aspar
+ * @author Erdemaslancan
  * @author Xoser
  */
 $messages['diq'] = array(
@@ -890,7 +891,7 @@ kerem kerê<a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_do
 	'ogg-player-selected' => '(vıciyaye)',
 	'ogg-use-player' => 'player bışuxuln:',
 	'ogg-more' => 'hema....',
-	'ogg-dismiss' => 'bıqefeln',
+	'ogg-dismiss' => 'Racne',
 	'ogg-download' => 'dosya biyar war',
 	'ogg-desc-link' => 'derheqê dosyayi de',
 	'ogg-oggThumb-version' => 'OggHandler rê oggThumb versiyon $1 ya zi newiyer lazim o.',
@@ -1985,6 +1986,7 @@ Please <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_downlo
  * @author გიორგიმელა
  */
 $messages['ka'] = array(
+	'ogg-desc' => 'ფაილების დამამუშავებელი Ogg Theora და Vorbis, JavaScript-დამკვრელის გამოყენებით',
 	'ogg-short-audio' => 'Ogg $1 აუდიო ფაილი, $2',
 	'ogg-short-video' => 'Ogg $1 ვიდეო ფაილი, $2',
 	'ogg-short-general' => 'Ogg $1 მედია ფაილი, $2',
@@ -1998,6 +2000,10 @@ $messages['ka'] = array(
 	'ogg-stop' => 'შეჩერება',
 	'ogg-play-video' => 'ვიდეოს ჩართვა',
 	'ogg-play-sound' => 'ხმის მოსმენა',
+	'ogg-no-player' => 'ბოდიშით, თქვენ სისტემას არ გააჩნია ფაილების დამკვრელი საჭირო პროგრამული უზრუნველყოფა. გთხოვთ, <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">გადმოწერეთ დამკვრელი</a>.',
+	'ogg-no-xiphqt' => 'QuickTime-ის კომპონენტი XiphQT არ არის. 
+QuickTime-ს არ შეუძლია Ogg ფაილების დაკვრა ამ კომპონენტის გარეშე. 
+გთხოვთ, <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">ჩამოტვირთეთ XiphQT</a> ან აირჩიეთ სხვა დამკვრელი.',
 	'ogg-player-videoElement' => 'მშობლიური ბრაუზერის მხარდაჭერა',
 	'ogg-player-oggPlugin' => 'ბრაუზერის მოდული',
 	'ogg-player-thumbnail' => 'მხოლოდ წინასწარი სურათი',
@@ -2009,6 +2015,7 @@ $messages['ka'] = array(
 	'ogg-download' => 'ფაილის ჩამოტვირთვა',
 	'ogg-desc-link' => 'ამ ფაილის შესახებ',
 	'ogg-oggThumb-version' => 'OggHandler-ს სჭირდება oggThumb ვერსია $1 ან უფრო გვიანდელი.',
+	'ogg-oggThumb-failed' => 'oggThumb-მა ვერ მოახერხა მინიატურის შექმნა.',
 );
 
 /** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬)
