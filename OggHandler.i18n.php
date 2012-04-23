@@ -1834,6 +1834,7 @@ $messages['is'] = array(
 /** Italian (Italiano)
  * @author .anaconda
  * @author AVRS
+ * @author Beta16
  * @author BrokenArrow
  * @author Darth Kule
  * @author HalphaZ
@@ -1843,11 +1844,11 @@ $messages['it'] = array(
 	'ogg-short-audio' => 'File audio Ogg $1, $2',
 	'ogg-short-video' => 'File video Ogg $1, $2',
 	'ogg-short-general' => 'File multimediale Ogg $1, $2',
-	'ogg-long-audio' => '(File audio Ogg $1, durata $2, $3)',
+	'ogg-long-audio' => 'File audio Ogg $1, durata $2, $3',
 	'ogg-long-video' => 'File video Ogg $1, durata $2, dimensioni $4×$5 pixel, $3',
-	'ogg-long-multiplexed' => '(File audio/video multiplexed Ogg $1, durata $2, dimensioni $4×$5 pixel, complessivamente $3)',
-	'ogg-long-general' => '(File multimediale Ogg, durata $2, $3)',
-	'ogg-long-error' => '(File ogg non valido: $1)',
+	'ogg-long-multiplexed' => 'File audio/video multiplexed Ogg $1, durata $2, dimensioni $4×$5 pixel, complessivamente $3',
+	'ogg-long-general' => 'File multimediale Ogg, durata $2, $3',
+	'ogg-long-error' => 'File Ogg non valido: $1',
 	'ogg-play' => 'Riproduci',
 	'ogg-pause' => 'Pausa',
 	'ogg-stop' => 'Ferma',
