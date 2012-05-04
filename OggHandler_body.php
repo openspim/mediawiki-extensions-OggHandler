@@ -77,6 +77,11 @@ class OggHandler extends MediaHandler {
 		return array();
 	}
 
+	/**
+	 * @param $image File
+	 * @param $params array
+	 * @return bool
+	 */
 	function normaliseParams( $image, &$params ) {
 		$srcWidth = $image->getWidth();
 		$srcHeight = $image->getHeight();
@@ -277,7 +282,10 @@ class OggHandler extends MediaHandler {
 	 * Run FFmpeg to generate a still image from a video file, using a frame close
 	 * to the given number of seconds from the start.
 	 *
-	 * Returns true on success, or an error message on failure.
+	 * @param $videoPath string
+	 * @param $dstPath string
+	 * @param $time
+	 * @return bool|string Returns true on success, or an error message on failure.
 	 */
 	function runFFmpeg( $videoPath, $dstPath, $time ) {
 		global $wgFFmpegLocation;
@@ -316,7 +324,10 @@ class OggHandler extends MediaHandler {
 	 * Run oggThumb to generate a still image from a video file, using a frame
 	 * close to the given number of seconds from the start.
 	 *
-	 * Returns true on success, or an error message on failure.
+	 * @param $videoPath string
+	 * @param $dstPath string
+	 * @param $time
+	 * @return bool|String Returns true on success, or an error message on failure.
 	 */
 	function runOggThumb( $videoPath, $dstPath, $time ) {
 		global $wgOggThumbLocation;
@@ -348,6 +359,10 @@ class OggHandler extends MediaHandler {
 	function canRender( $file ) { return true; }
 	function mustRender( $file ) { return true; }
 
+	/**
+	 * @param $file File
+	 * @return int
+	 */
 	function getLength( $file ) {
 		$metadata = $this->unpackMetadata( $file->getMetadata() );
 		if ( !$metadata || isset( $metadata['error'] ) ) {
@@ -357,6 +372,10 @@ class OggHandler extends MediaHandler {
 		}
 	}
 
+	/**
+	 * @param $file File
+	 * @return array|bool
+	 */
 	function getStreamTypes( $file ) {
 		$streamTypes = array();
 		$metadata = $this->unpackMetadata( $file->getMetadata() );
@@ -426,6 +445,10 @@ class OggHandler extends MediaHandler {
 		);
 	}
 
+	/**
+	 * @param $file File
+	 * @return String
+	 */
 	function getDimensionsString( $file ) {
 		global $wgLang;
 		if ( $file->getWidth() ) {
@@ -442,6 +465,9 @@ class OggHandler extends MediaHandler {
 		return "$wgExtensionAssetsPath/OggHandler";
 	}
 
+	/**
+	 * @param $out OutputPage
+	 */
 	function setHeaders( $out ) {
 		if ( $out->hasHeadItem( 'OggHandlerScript' ) && $out->hasHeadItem( 'OggHandlerInlineScript' ) &&
 			$out->hasHeadItem( 'OggHandlerInlineCSS' ) ) {
@@ -514,6 +540,7 @@ EOT
 	 * 
 	 * @param $thumbname string URL-decoded basename of URI
 	 * @param &$params Array Currently parsed thumbnail params
+	 * @return bool
 	 */
 	public static function onExtractThumbParameters( $thumbname, array &$params ) {
 		if ( !preg_match( '/\.(?:ogg|ogv|oga)$/i', $params['f'] ) ) {
@@ -535,9 +562,13 @@ EOT
 class OggTransformOutput extends MediaTransformOutput {
 	static $serial = 0;
 
+	/**
+	 * @var File
+	 */
+	var $file;
+
 	function __construct( $file, $videoUrl, $thumbUrl, $width, $height, $length, $isVideo,
-		$path, $noIcon = false )
-	{
+		$path, $noIcon = false ) {
 		$this->file = $file;
 		$this->videoUrl = $videoUrl;
 		$this->url = $thumbUrl;
