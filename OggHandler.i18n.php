@@ -1394,7 +1394,7 @@ $messages['gl'] = array(
 $messages['grc'] = array(
 	'ogg-long-error' => '(Ἄκυρα ἀρχεῖα ogg: $1)',
 	'ogg-play' => 'Ἀναπαράγειν',
-	'ogg-player-selected' => '(ἐπειλεγμένη)',
+	'ogg-player-selected' => '(επιλεγμένη)',
 	'ogg-more' => 'πλέον...',
 	'ogg-dismiss' => 'Κλῄειν',
 );
@@ -1815,20 +1815,34 @@ $messages['io'] = array(
 
 /** Icelandic (Íslenska)
  * @author S.Örvarr.S
+ * @author Snævar
  * @author Spacebirdy
  */
 $messages['is'] = array(
+	'ogg-short-audio' => 'Ogg $1 hljóðskrá, $2',
+	'ogg-short-video' => 'Ogg $1 myndbandskrá, $2',
+	'ogg-short-general' => 'Ogg $1 margmiðlunarskrá, $2',
+	'ogg-long-audio' => 'Ogg $1 hljóðskrá, lengd $2, $3',
+	'ogg-long-video' => 'Ogg $1 myndbandskrá, lengd $2, $4×$5 dílar, $3',
+	'ogg-long-general' => 'Ogg margmiðlunarskrá, lengd $2, $3',
 	'ogg-play' => 'Spila',
 	'ogg-pause' => 'gera hlé',
 	'ogg-stop' => 'Stöðva',
 	'ogg-play-video' => 'Spila myndband',
 	'ogg-play-sound' => 'Spila hljóð',
+	'ogg-no-player' => 'Því miður, virðist talvan þín ekki hafa neitt forrit til að spila Ogg skrár. Vinsamlegast <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">hladdu niður spilara</a>.',
+	'ogg-no-xiphqt' => 'Þú virðist ekki hafa XiphQT viðbótina fyrir QuickTime. 
+QuickTime getur ekki spilað Ogg skrár án viðbótarinnar.
+Vinsamlegast <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">hladdu niður XiphQT</a> eða veldu annan spilara.',
+	'ogg-player-videoElement' => 'Stuðningur í vafra',
+	'ogg-player-oggPlugin' => 'Vafrara viðbót',
 	'ogg-player-soundthumb' => 'Enginn spilari',
 	'ogg-player-selected' => '(valið)',
 	'ogg-use-player' => 'Nota spilara:',
 	'ogg-more' => 'Meira...',
 	'ogg-dismiss' => 'Loka',
 	'ogg-download' => 'Sækja skrá',
+	'ogg-desc-link' => 'Um þessa skrá',
 );
 
 /** Italian (Italiano)
@@ -2305,6 +2319,19 @@ QuickTime kann Ogg-Fichiere net ouni dës Komponent spillen.
 	'ogg-oggThumb-failed' => 'oggThumb konnt kee Miniaturbild maachen.',
 );
 
+/** Lezghian (Лезги)
+ * @author Migraghvi
+ */
+$messages['lez'] = array(
+	'ogg-play' => 'КЪугъугъ',
+	'ogg-pause' => 'Пауза',
+	'ogg-stop' => 'Аквазун',
+	'ogg-play-video' => 'Видео къугъурун',
+	'ogg-play-sound' => 'Ван къугъурун',
+	'ogg-more' => 'Мадни...',
+	'ogg-dismiss' => 'Агалун',
+);
+
 /** Lingua Franca Nova (Lingua Franca Nova)
  * @author Malafaya
  */
@@ -2759,6 +2786,7 @@ Download <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_down
  * @author AVRS
  * @author Eirik
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'ogg-desc' => 'Gjer at Ogg Theora- og Ogg Vorbis-filer kan verta køyrte ved hjelp av JavaScript-avspelar.',
@@ -2884,6 +2912,14 @@ $messages['pdc'] = array(
 	'ogg-dismiss' => 'Zumache',
 	'ogg-download' => 'Feil runnerlaade',
 	'ogg-desc-link' => 'Iwwer sell Feil',
+);
+
+/** Pälzisch (Pälzisch)
+ * @author Manuae
+ */
+$messages['pfl'] = array(
+	'ogg-pause' => 'Paus',
+	'ogg-stop' => 'Uffhere',
 );
 
 /** Polish (Polski)
@@ -3797,7 +3833,7 @@ $messages['tg-cyrl'] = array(
 	'ogg-desc-link' => 'Дар бораи ин парванда',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author AVRS
  * @author Liangent
  */
@@ -4098,7 +4134,7 @@ $messages['vec'] = array(
 	'ogg-oggThumb-failed' => "oggThumb no'l xe stà bon de crear la miniatura.",
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
