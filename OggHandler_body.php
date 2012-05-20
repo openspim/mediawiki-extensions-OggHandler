@@ -5,10 +5,16 @@
 class OggHandler extends MediaHandler {
 	const OGG_METADATA_VERSION = 2;
 
+	/**
+	 * @return bool
+	 */
 	function isEnabled() {
 		return true;
 	}
 
+	/**
+	 * @return array
+	 */
 	function getParamMap() {
 		return array(
 			'img_width' => 'width',
@@ -18,6 +24,11 @@ class OggHandler extends MediaHandler {
 		);
 	}
 
+	/**
+	 * @param $name string
+	 * @param $value string
+	 * @return bool
+	 */
 	function validateParam( $name, $value ) {
 		if ( in_array( $name, array( 'width', 'height' ) ) ) {
 			return $value > 0;
@@ -32,6 +43,11 @@ class OggHandler extends MediaHandler {
 		return $name == 'noicon';
 	}
 
+	/**
+	 * @param $seekString
+	 * @param $length int|bool
+	 * @return bool|float|int
+	 */
 	function parseTimeString( $seekString, $length = false ) {
 		$parts = explode( ':', $seekString );
 		$time = 0;
@@ -55,6 +71,10 @@ class OggHandler extends MediaHandler {
 		return $time;
 	}
 
+	/**
+	 * @param $params array
+	 * @return string
+	 */
 	function makeParamString( $params ) {
 		if ( isset( $params['thumbtime'] ) ) {
 			$time = $this->parseTimeString( $params['thumbtime'] );
@@ -69,6 +89,10 @@ class OggHandler extends MediaHandler {
 		return 'mid';
 	}
 
+	/**
+	 * @param $str string
+	 * @return array
+	 */
 	function parseParamString( $str ) {
 		$m = false;
 		if ( preg_match( '/^seek=(\d+)$/', $str, $m ) ) {
@@ -124,6 +148,12 @@ class OggHandler extends MediaHandler {
 		return true;
 	}
 
+	/**
+	 * @param $file File
+	 * @param $path string
+	 * @param $metadata bool
+	 * @return array|bool
+	 */
 	function getImageSize( $file, $path, $metadata = false ) {
 		global $wgOggVideoTypes;
 		// Just return the size of the first video stream
@@ -152,6 +182,11 @@ class OggHandler extends MediaHandler {
 		return array( false, false );
 	}
 
+	/**
+	 * @param $image File
+	 * @param $path string
+	 * @return string
+	 */
 	function getMetadata( $image, $path ) {
 		$metadata = array( 'version' => self::OGG_METADATA_VERSION );
 
@@ -188,6 +223,10 @@ class OggHandler extends MediaHandler {
 		return serialize( $metadata );
 	}
 
+	/**
+	 * @param $metadata
+	 * @return bool|mixed
+	 */
 	function unpackMetadata( $metadata ) {
 		$unser = @unserialize( $metadata );
 		if ( isset( $unser['version'] ) && $unser['version'] == self::OGG_METADATA_VERSION ) {
@@ -197,18 +236,41 @@ class OggHandler extends MediaHandler {
 		}
 	}
 
+	/**
+	 * @param $image
+	 * @return string
+	 */
 	function getMetadataType( $image ) {
 		return 'ogg';
 	}
 
+	/**
+	 * @param $image
+	 * @param $metadata
+	 * @return bool
+	 */
 	function isMetadataValid( $image, $metadata ) {
 		return $this->unpackMetadata( $metadata ) !== false;
 	}
 
+	/**
+	 * @param $ext
+	 * @param $mime
+	 * @param null $params
+	 * @return array
+	 */
 	function getThumbType( $ext, $mime, $params = null ) {
 		return array( 'jpg', 'image/jpeg' );
 	}
 
+	/**
+	 * @param $file File
+	 * @param $dstPath string
+	 * @param $dstUrl string
+	 * @param $params array
+	 * @param $flags int
+	 * @return MediaTransformError|OggAudioDisplay|OggVideoDisplay|ThumbnailImage|TransformParameterError
+	 */
 	function doTransform( $file, $dstPath, $dstUrl, $params, $flags = 0 ) {
 		if ( !$this->normaliseParams( $file, $params ) ) {
 			return new TransformParameterError( $params );
@@ -356,7 +418,16 @@ class OggHandler extends MediaHandler {
 		return true;
 	}
 
+	/**
+	 * @param $file
+	 * @return bool
+	 */
 	function canRender( $file ) { return true; }
+
+	/**
+	 * @param $file
+	 * @return bool
+	 */
 	function mustRender( $file ) { return true; }
 
 	/**
@@ -388,6 +459,10 @@ class OggHandler extends MediaHandler {
 		return array_unique( $streamTypes );
 	}
 
+	/**
+	 * @param $file File
+	 * @return String
+	 */
 	function getShortDesc( $file ) {
 		global $wgLang, $wgOggAudioTypes, $wgOggVideoTypes;
 		$streamTypes = $this->getStreamTypes( $file );
@@ -406,6 +481,10 @@ class OggHandler extends MediaHandler {
 			$wgLang->formatTimePeriod( $this->getLength( $file ) ) );
 	}
 
+	/**
+	 * @param $file File
+	 * @return String
+	 */
 	function getLongDesc( $file ) {
 		global $wgLang, $wgOggVideoTypes, $wgOggAudioTypes;
 
@@ -460,6 +539,9 @@ class OggHandler extends MediaHandler {
 		}
 	}
 
+	/**
+	 * @return string
+	 */
 	static function getMyScriptPath() {
 		global $wgExtensionAssetsPath;
 		return "$wgExtensionAssetsPath/OggHandler";
@@ -520,14 +602,23 @@ EOT
 ) );
 	}
 
+	/**
+	 * @param $parser Parser
+	 * @param $file File
+	 */
 	function parserTransformHook( $parser, $file ) {
-		if ( isset( $parser->mOutput->hasOggTransform ) ) {
+		if ( isset( $parser->getOutput()->hasOggTransform ) ) {
 			return;
 		}
-		$parser->mOutput->hasOggTransform = true;
-		$parser->mOutput->addOutputHook( 'OggHandler' );
+		$parser->getOutput()->hasOggTransform = true;
+		$parser->getOutput()->addOutputHook( 'OggHandler' );
 	}
 
+	/**
+	 * @param $outputPage OutputPage
+	 * @param $parserOutput ParserOutput
+	 * @param $data
+	 */
 	static function outputHook( $outputPage, $parserOutput, $data ) {
 		$instance = MediaHandler::getHandler( 'application/ogg' );
 		if ( $instance ) {
@@ -580,6 +671,11 @@ class OggTransformOutput extends MediaTransformOutput {
 		$this->noIcon = $noIcon;
 	}
 
+	/**
+	 * @param $options array
+	 * @return string
+	 * @throws MWException
+	 */
 	function toHtml( $options = array() ) {
 		if ( count( func_get_args() ) == 2 ) {
 			throw new MWException( __METHOD__ .' called in the old style' );
