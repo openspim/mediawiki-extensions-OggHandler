@@ -41,6 +41,13 @@ $magicWords['ce'] = array(
 	'ogg_noicon' => array( 0, 'куцдац', 'нетзначка', 'noicon' ),
 );
 
+/** German (Deutsch) */
+$magicWords['de'] = array(
+	'ogg_noplayer' => array( 0, 'keinwiedergabeprogramm', 'keinplayer' ),
+	'ogg_noicon' => array( 0, 'keinpiktogramm', 'keinsymbol' ),
+	'ogg_thumbtime' => array( 0, 'miniaturdauer=$1', 'minidauer=$1' ),
+);
+
 /** Esperanto (Esperanto) */
 $magicWords['eo'] = array(
 	'ogg_noplayer' => array( 0, 'neniuludilo' ),
@@ -51,6 +58,11 @@ $magicWords['eo'] = array(
 $magicWords['es'] = array(
 	'ogg_noplayer' => array( 0, 'noreproductor', 'sinreproductor' ),
 	'ogg_noicon' => array( 0, 'noicono', 'sinicono' ),
+);
+
+/** Persian (فارسی) */
+$magicWords['fa'] = array(
+	'ogg_noicon' => array( 0, 'بدون_شمایل' ),
 );
 
 /** Japanese (日本語) */
