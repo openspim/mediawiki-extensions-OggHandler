@@ -314,11 +314,11 @@ $messages['ast'] = array(
 	'ogg-short-audio' => 'Archivu de soníu ogg $1, $2',
 	'ogg-short-video' => 'Ficheru de videu ogg $1, $2',
 	'ogg-short-general' => 'Archivu multimedia ogg $1, $2',
-	'ogg-long-audio' => '(Archivu de soníu ogg $1, llonxitú $2, $3)',
+	'ogg-long-audio' => 'Ficheru de soníu ogg $1, llonxitú $2, $3',
 	'ogg-long-video' => 'Archivu de videu ogg $1, llonxitú $2, $4×$5 píxeles, $3',
-	'ogg-long-multiplexed' => "(Archivu d'audiu/videu ogg multiplexáu, $1, llonxitú $2, $4×$5 píxeles, $3)",
-	'ogg-long-general' => '(Archivu multimedia ogg, llonxitú $2, $3)',
-	'ogg-long-error' => '(Archivu ogg non válidu: $1)',
+	'ogg-long-multiplexed' => 'Ficheru de soníu/videu ogg multiplexáu, $1, llonxitú $2, $4×$5 píxeles, $3 en total',
+	'ogg-long-general' => 'Ficheru multimedia ogg, llonxitú $2, $3',
+	'ogg-long-error' => 'Ficheru ogg inválidu: $1',
 	'ogg-play' => 'Reproducir',
 	'ogg-pause' => 'Pausar',
 	'ogg-stop' => 'Aparar',
@@ -540,17 +540,18 @@ $messages['bg'] = array(
 /** Bengali (বাংলা)
  * @author AVRS
  * @author Bellayet
+ * @author Nasir8891
  * @author Zaheen
  */
 $messages['bn'] = array(
 	'ogg-short-audio' => 'অগ $1 সাউন্ড ফাইল, $2',
 	'ogg-short-video' => 'অগ $1 ভিডিও ফাইল, $2',
 	'ogg-short-general' => 'অগ $1 মিডিয়া ফাইল, $2',
-	'ogg-long-audio' => '(অগ $1 সাউন্ড ফাইল, দৈর্ঘ্য $2, $3)',
+	'ogg-long-audio' => 'অগ $1 সাউন্ড ফাইল, দৈর্ঘ্য $2, $3',
 	'ogg-long-video' => 'অগ $1 ভিডিও ফাইল, দৈর্ঘ্য $2, $4×$5 পিক্সেল, $3',
-	'ogg-long-multiplexed' => '(অগ মাল্টিপ্লেক্সকৃত অডিও/ভিডিও ফাইল, $1, দৈর্ঘ্য $2, $4×$5 পিক্সেল, $3 সামগ্রিক)',
-	'ogg-long-general' => '(অগ মিডিয়া ফাইল, দৈর্ঘ্য $2, $3)',
-	'ogg-long-error' => '(অবৈধ অগ ফাইল: $1)',
+	'ogg-long-multiplexed' => 'অগ মাল্টিপ্লেক্সকৃত অডিও/ভিডিও ফাইল, $1, দৈর্ঘ্য $2, $4×$5 পিক্সেল, $3 সামগ্রিক',
+	'ogg-long-general' => 'অগ মিডিয়া ফাইল, দৈর্ঘ্য $2, $3',
+	'ogg-long-error' => 'অবৈধ অগ ফাইল: $1',
 	'ogg-play' => 'চালানো হোক',
 	'ogg-pause' => 'বিরতি',
 	'ogg-stop' => 'বন্ধ',
@@ -1169,6 +1170,7 @@ $messages['fa'] = array(
  * @author AVRS
  * @author Agony
  * @author Crt
+ * @author Linnea
  * @author Nike
  * @author Str4nd
  */
@@ -1177,11 +1179,11 @@ $messages['fi'] = array(
 	'ogg-short-audio' => 'Ogg $1 -äänitiedosto, $2',
 	'ogg-short-video' => 'Ogg $1 -videotiedosto, $2',
 	'ogg-short-general' => 'Ogg $1 -mediatiedosto, $2',
-	'ogg-long-audio' => '(Ogg $1 -äänitiedosto, $2, $3)',
+	'ogg-long-audio' => 'Ogg $1 -äänitiedosto, $2, $3',
 	'ogg-long-video' => 'Ogg $1 -videotiedosto, $2, $4×$5, $3',
-	'ogg-long-multiplexed' => '(Ogg-tiedosto (limitetty kuva ja ääni), $1, $2, $4×$5, $3)',
-	'ogg-long-general' => '(Ogg-tiedosto, $2, $3)',
-	'ogg-long-error' => '(Kelvoton ogg-tiedosto: $1)',
+	'ogg-long-multiplexed' => 'Ogg-tiedosto (limitetty kuva ja ääni), $1, $2, $4×$5, $3',
+	'ogg-long-general' => 'Ogg-tiedosto, $2, $3',
+	'ogg-long-error' => 'Kelvoton ogg-tiedosto: $1',
 	'ogg-play' => 'Soita',
 	'ogg-pause' => 'Tauko',
 	'ogg-stop' => 'Pysäytä',
@@ -1644,6 +1646,7 @@ $messages['ht'] = array(
 /** Hungarian (Magyar)
  * @author AVRS
  * @author Dani
+ * @author Dj
  * @author Glanthor Reviol
  * @author Tgr
  */
@@ -1652,11 +1655,11 @@ $messages['hu'] = array(
 	'ogg-short-audio' => 'Ogg $1 hangfájl, $2',
 	'ogg-short-video' => 'Ogg $1 videofájl, $2',
 	'ogg-short-general' => 'Ogg $1 médiafájl, $2',
-	'ogg-long-audio' => '(Ogg $1 hangfájl, hossza: $2, $3)',
+	'ogg-long-audio' => 'Ogg $1 hangfájl, hossza: $2, $3',
 	'ogg-long-video' => 'Ogg $1 videófájl, hossza $2, $4×$5 képpont, $3',
-	'ogg-long-multiplexed' => '(Ogg egyesített audió- és videófájl, $1, hossz: $2, $4×$5 képpont, $3 összesen)',
-	'ogg-long-general' => '(Ogg médiafájl, hossza: $2, $3)',
-	'ogg-long-error' => '(Érvénytelen ogg fájl: $1)',
+	'ogg-long-multiplexed' => 'Ogg egyesített audió- és videófájl, $1, hossz: $2, $4×$5 képpont, $3 összesen',
+	'ogg-long-general' => 'Ogg médiafájl, hossza: $2, $3',
+	'ogg-long-error' => 'Érvénytelen ogg fájl: $1',
 	'ogg-play' => 'Lejátszás',
 	'ogg-pause' => 'Szüneteltetés',
 	'ogg-stop' => 'Állj',
