@@ -1902,11 +1902,11 @@ $messages['ja'] = array(
 	'ogg-short-audio' => 'Ogg $1 音声ファイル、$2',
 	'ogg-short-video' => 'Ogg $1 動画ファイル、$2',
 	'ogg-short-general' => 'Ogg $1 メディアファイル、$2',
-	'ogg-long-audio' => '(Ogg $1 音声ファイル、長さ $2、$3)',
+	'ogg-long-audio' => 'Ogg $1 音声ファイル、長さ $2、$3',
 	'ogg-long-video' => 'Ogg $1 動画ファイル、長さ $2、$4×$5px、$3',
-	'ogg-long-multiplexed' => '(Ogg 多重音声/動画ファイル、$1、長さ $2、$4×$5 ピクセル、$3)',
-	'ogg-long-general' => '(Ogg メディアファイル、長さ $2、$3)',
-	'ogg-long-error' => '(無効な Ogg ファイル: $1)',
+	'ogg-long-multiplexed' => 'Ogg 多重音声/動画ファイル、$1、長さ $2、$4×$5 ピクセル、全体で$3',
+	'ogg-long-general' => 'Ogg メディアファイル、長さ $2、$3',
+	'ogg-long-error' => '無効な Ogg ファイル：$1',
 	'ogg-play' => '再生',
 	'ogg-pause' => '一時停止',
 	'ogg-stop' => '停止',
@@ -2174,17 +2174,18 @@ $messages['km'] = array(
  * @author ITurtle
  * @author Kwj2772
  * @author ToePeu
+ * @author 아라
  */
 $messages['ko'] = array(
 	'ogg-desc' => 'OGG Theora 및 Vorbis 파일 핸들러와 자바스크립트 플레이어',
 	'ogg-short-audio' => 'Ogg $1 소리 파일, $2',
 	'ogg-short-video' => 'Ogg $1 영상 파일, $2',
 	'ogg-short-general' => 'Ogg $1 미디어 파일, $2',
-	'ogg-long-audio' => '(Ogg $1 소리 파일, 길이 $2, $3)',
+	'ogg-long-audio' => 'Ogg $1 소리 파일, 길이 $2, $3',
 	'ogg-long-video' => 'Ogg $1 영상 파일, 길이 $2, $4×$5 픽셀, $3',
-	'ogg-long-multiplexed' => '(Ogg 다중 소리/영상 파일, $1, 길이 $2, $4×$5 픽셀, 대략 $3)',
-	'ogg-long-general' => '(Ogg 미디어 파일, 길이 $2, $3)',
-	'ogg-long-error' => '(잘못된 ogg 파일: $1)',
+	'ogg-long-multiplexed' => 'Ogg 다중 소리/영상 파일, $1, 길이 $2, $4×$5 픽셀, 대략 $3',
+	'ogg-long-general' => 'Ogg 미디어 파일, 길이 $2, $3',
+	'ogg-long-error' => '잘못된 ogg 파일: $1',
 	'ogg-play' => '재생',
 	'ogg-pause' => '일시정지',
 	'ogg-stop' => '정지',
@@ -2929,6 +2930,7 @@ $messages['pfl'] = array(
 
 /** Polish (Polski)
  * @author AVRS
+ * @author BeginaFelicysym
  * @author Derbeth
  * @author Leinad
  * @author Sp5uhe
@@ -2938,11 +2940,11 @@ $messages['pl'] = array(
 	'ogg-short-audio' => 'Plik dźwiękowy Ogg $1, $2',
 	'ogg-short-video' => 'Plik wideo Ogg $1, $2',
 	'ogg-short-general' => 'Plik multimedialny Ogg $1, $2',
-	'ogg-long-audio' => '(plik dźwiękowy Ogg $1, długość $2, $3)',
+	'ogg-long-audio' => 'Plik dźwiękowy Ogg $1, długość $2, $3',
 	'ogg-long-video' => 'plik wideo Ogg $1, długość $2, rozdzielczość $4×$5, $3',
-	'ogg-long-multiplexed' => '(plik audio/wideo Ogg, $1, długość $2, rozdzielczość $4×$5, ogółem $3)',
-	'ogg-long-general' => '(plik multimedialny Ogg, długość $2, $3)',
-	'ogg-long-error' => '(niepoprawny plik Ogg: $1)',
+	'ogg-long-multiplexed' => 'Plik audio/wideo Ogg, $1, długość $2, rozdzielczość $4×$5, ogółem $3',
+	'ogg-long-general' => 'Plik multimedialny Ogg, długość $2, $3',
+	'ogg-long-error' => 'Niepoprawny plik Ogg: $1',
 	'ogg-play' => 'Odtwórz',
 	'ogg-pause' => 'Pauza',
 	'ogg-stop' => 'Stop',
