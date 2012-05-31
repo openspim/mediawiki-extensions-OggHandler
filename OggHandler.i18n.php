@@ -304,6 +304,13 @@ $messages['arz'] = array(
 	'ogg-desc-link' => 'عن الملف دا',
 );
 
+/** Assamese (অসমীয়া)
+ * @author Bishnu Saikia
+ */
+$messages['as'] = array(
+	'ogg-dismiss' => 'বন্ধ কৰক',
+);
+
 /** Asturian (Asturianu)
  * @author AVRS
  * @author Esbardu
