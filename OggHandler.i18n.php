@@ -306,15 +306,24 @@ $messages['arz'] = array(
 
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
+ * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
 	'ogg-short-audio' => 'অগ $1 শব্দ ফাইল, $2',
 	'ogg-short-video' => 'অগ $1 ভিডিঅ’ ফাইল, $2',
 	'ogg-short-general' => 'অগ $1 মিডিয়া ফাইল, $2',
+	'ogg-long-audio' => 'অগ $1 শব্দ ফাইল, দৈৰ্ঘ্য $2, $3',
+	'ogg-long-video' => 'অগ $1 ভিডিঅ’ ফাইল, দৈৰ্ঘ্য $2, $4×$5 পিক্সেল, $3',
+	'ogg-long-multiplexed' => 'অগ মাল্টিপ্লেক্সকৃত অডিঅ’/ভিডিঅ’ ফাইল, $1, দৈৰ্ঘ্য $2, $4×$5 পিক্সেল, $3 সামগ্ৰিক',
+	'ogg-long-general' => 'অগ মিডিয়া ফাইল, দৈৰ্ঘ্য $2, $3',
+	'ogg-long-error' => 'অবৈধ ogg ফাইল: $1',
 	'ogg-play' => 'প্লে কৰক',
 	'ogg-pause' => 'বিৰতি',
 	'ogg-stop' => 'বন্ধ',
 	'ogg-play-video' => 'ভিডিঅ’ প্লে কৰক',
+	'ogg-play-sound' => 'শ্ৰাব্য ক্লিপ শুনক',
+	'ogg-no-player' => 'দুঃখিত, আপোনাৰ কম্পিউটাৰত ফাইলটো চলোৱাৰ বাবে প্ৰয়োজনীয় ছফটৱেৰ নাই। অনুগ্ৰহ কৰি <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">ছফটৱেৰটো ডাউনলোড কৰক</a>।',
+	'ogg-player-videoElement' => 'স্থানীয় ব্ৰাউজাৰ চাপোৰ্ট',
 	'ogg-player-oggPlugin' => 'ব্ৰাউজাৰ প্লাগ-ইন',
 	'ogg-player-thumbnail' => 'কেৱলমাত্ৰ স্থিৰ চিত্ৰ',
 	'ogg-player-soundthumb' => 'কোনো প্লেয়াৰ নাই',
@@ -595,7 +604,7 @@ $messages['bn'] = array(
 	'ogg-desc-link' => 'এই ফাইলের বৃত্তান্ত',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author AVRS
  * @author Fohanno
  * @author Fulup
@@ -803,7 +812,7 @@ Os gwelwch yn dda, a wnewch chi <a href="http://www.mediawiki.org/wiki/Extension
 	'ogg-oggThumb-failed' => "Methodd oggThumb â chynhyrchu'r mân-lun.",
 );
 
-/** Danish (Dansk)
+/** Danish (dansk)
  * @author AVRS
  * @author Byrial
  * @author Jon Harald Søby
@@ -1429,6 +1438,7 @@ $messages['grc'] = array(
 
 /** Swiss German (Alemannisch)
  * @author AVRS
+ * @author Als-Chlämens
  * @author Als-Holder
  * @author Melancholie
  */
@@ -1437,7 +1447,7 @@ $messages['gsw'] = array(
 	'ogg-short-audio' => 'Ogg-$1-Audiodatei, $2',
 	'ogg-short-video' => 'Ogg-$1-Videodatei, $2',
 	'ogg-short-general' => 'Ogg-$1-Mediadatei, $2',
-	'ogg-long-audio' => '(Ogg-$1-Audiodatei, Längi: $2, $3)',
+	'ogg-long-audio' => 'Ogg-$1-Audiodatei, Längi: $2, $3',
 	'ogg-long-video' => 'Ogg-$1-Videodatei, Längi: $2, $4×$5 Pixel, $3',
 	'ogg-long-multiplexed' => '(Ogg-Audio-/Video-Datei, $1, Längi: $2, $4×$5 Pixel, $3)',
 	'ogg-long-general' => '(Ogg-Mediadatei, Längi: $2, $3)',
@@ -3260,7 +3270,7 @@ Pe piacere <a href=\"http://www.mediawiki.org/wiki/Extension:OggHandler/Client_d
 	'ogg-oggThumb-failed' => 'oggThumb ha fallite sus a crejazione de le miniature.',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author AVRS
  * @author Ahonc
  * @author Dim Grits
