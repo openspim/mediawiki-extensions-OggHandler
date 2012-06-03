@@ -308,7 +308,22 @@ $messages['arz'] = array(
  * @author Bishnu Saikia
  */
 $messages['as'] = array(
+	'ogg-short-audio' => 'অগ $1 শব্দ ফাইল, $2',
+	'ogg-short-video' => 'অগ $1 ভিডিঅ’ ফাইল, $2',
+	'ogg-short-general' => 'অগ $1 মিডিয়া ফাইল, $2',
+	'ogg-play' => 'প্লে কৰক',
+	'ogg-pause' => 'বিৰতি',
+	'ogg-stop' => 'বন্ধ',
+	'ogg-play-video' => 'ভিডিঅ’ প্লে কৰক',
+	'ogg-player-oggPlugin' => 'ব্ৰাউজাৰ প্লাগ-ইন',
+	'ogg-player-thumbnail' => 'কেৱলমাত্ৰ স্থিৰ চিত্ৰ',
+	'ogg-player-soundthumb' => 'কোনো প্লেয়াৰ নাই',
+	'ogg-player-selected' => '(নিৰ্বাচিত)',
+	'ogg-use-player' => 'প্লেয়াৰ ব্যৱহাৰ কৰক:',
+	'ogg-more' => 'অধিক...',
 	'ogg-dismiss' => 'বন্ধ কৰক',
+	'ogg-download' => 'ফাইল ডাউনলোড কৰক',
+	'ogg-desc-link' => 'এই ফাইলৰ বৃত্তান্ত',
 );
 
 /** Asturian (Asturianu)
@@ -386,17 +401,18 @@ $messages['az'] = array(
  * @author Haqmar
  * @author Roustammr
  * @author Рустам Нурыев
+ * @author ҒатаУлла
  */
 $messages['ba'] = array(
 	'ogg-desc' => 'Ogg Theora һәм Vorbis файлдарын JavaScript-уйнатыусы ҡулланған эшкәртеүсе',
 	'ogg-short-audio' => 'Тауыш файлы Ogg $1, $2',
 	'ogg-short-video' => 'Видео-файл Ogg $1, $2',
 	'ogg-short-general' => 'Медиа-файл Ogg $1, $2',
-	'ogg-long-audio' => '(тауыш файлы Ogg $1, оҙонлоҡ $2, $3)',
+	'ogg-long-audio' => 'Ogg $1 тауыш файлы , оҙонлоҡ $2, $3',
 	'ogg-long-video' => 'видео-файл Ogg $1, оҙонлоҡ $2, $4×$5 {{PLURAL:$5|пиксель}}, $3',
 	'ogg-long-multiplexed' => 'мультиплекс аудио/видео-файл Ogg, $1, оҙонлоҡ $2, $4×$5 {{PLURAL:$5|пиксель}}, барыһы $3',
-	'ogg-long-general' => '(медиа-файл Ogg, оҙонлоҡ $2, $3)',
-	'ogg-long-error' => '(яңылыш ogg-файл: $1)',
+	'ogg-long-general' => 'Ogg медиа-файл , оҙонлоҡ $2, $3',
+	'ogg-long-error' => 'яңылыш ogg-файл: $1',
 	'ogg-play' => 'Уйнатырға',
 	'ogg-pause' => 'Туҡтатып тору',
 	'ogg-stop' => 'Туҡтатыу',
@@ -411,6 +427,7 @@ $messages['ba'] = array(
 	'ogg-more' => 'Тағы...',
 	'ogg-dismiss' => 'Ябырға',
 	'ogg-desc-link' => 'Был файл тураһында',
+	'ogg-oggThumb-failed' => 'oggThumb нигеҙендә рәсемде яһап булманы.',
 );
 
 /** Southern Balochi (بلوچی مکرانی)
