@@ -54,7 +54,7 @@ $magicWords['eo'] = array(
 	'ogg_noicon' => array( 0, 'neniubildsimbolo' ),
 );
 
-/** Spanish (Español) */
+/** Spanish (español) */
 $magicWords['es'] = array(
 	'ogg_noplayer' => array( 0, 'noreproductor', 'sinreproductor' ),
 	'ogg_noicon' => array( 0, 'noicono', 'sinicono' ),
@@ -72,7 +72,14 @@ $magicWords['ja'] = array(
 	'ogg_thumbtime' => array( 0, 'サムネイル時刻=$1' ),
 );
 
-/** Macedonian (Македонски) */
+/** Korean (한국어) */
+$magicWords['ko'] = array(
+	'ogg_noplayer' => array( 0, '플레이어없음' ),
+	'ogg_noicon' => array( 0, '아이콘없음' ),
+	'ogg_thumbtime' => array( 0, '섬네일시간=$1', '썸네일시간=$1', '축소판시간=$1' ),
+);
+
+/** Macedonian (македонски) */
 $magicWords['mk'] = array(
 	'ogg_noplayer' => array( 0, 'безизведувач' ),
 	'ogg_noicon' => array( 0, 'безикона' ),
@@ -105,39 +112,46 @@ $magicWords['nl'] = array(
 	'ogg_thumbtime' => array( 0, 'miniatuurtijd=$1' ),
 );
 
-/** Polish (Polski) */
+/** Polish (polski) */
 $magicWords['pl'] = array(
 	'ogg_noicon' => array( 0, 'bezikony' ),
 );
 
-/** Portuguese (Português) */
+/** Portuguese (português) */
 $magicWords['pt'] = array(
 	'ogg_noicon' => array( 0, 'semícone', 'noicon' ),
 	'ogg_thumbtime' => array( 0, 'tempominiatura=$1', 'thumbtime=$1' ),
 );
 
-/** Russian (Русский) */
+/** Russian (русский) */
 $magicWords['ru'] = array(
 	'ogg_noplayer' => array( 0, 'нетпроигрывателя' ),
 	'ogg_noicon' => array( 0, 'нетзначка' ),
 	'ogg_thumbtime' => array( 0, 'время_миниатюры=$1' ),
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬) */
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬) */
 $magicWords['sr-ec'] = array(
 	'ogg_noicon' => array( 0, 'безиконице', 'безиконе', 'без_иконице', 'без_иконе' ),
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $magicWords['sr-el'] = array(
 	'ogg_noplayer' => array( 0, 'bez_plejera' ),
 	'ogg_noicon' => array( 0, 'bez_ikone' ),
 	'ogg_thumbtime' => array( 0, 'vreme_slike=$1' ),
 );
 
-/** Swedish (Svenska) */
+/** Swedish (svenska) */
 $magicWords['sv'] = array(
 	'ogg_thumbtime' => array( 0, 'minatyrtid=$1', 'thumbtime=$1' ),
+);
+
+/** Ukrainian (українська) */
+$magicWords['uk'] = array(
+	'ogg_noplayer' => array( 0, 'без_програвача' ),
+	'ogg_noicon' => array( 0, 'без_значка' ),
+	'ogg_thumbtime' => array( 0, 'час_мініатюри' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
