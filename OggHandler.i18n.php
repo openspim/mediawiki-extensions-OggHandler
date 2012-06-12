@@ -309,6 +309,7 @@ $messages['arz'] = array(
  * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
+	'ogg-desc' => 'জাভাস্ক্ৰিপ্ট প্লেয়াৰৰ সৈতে Ogg Theora আৰু Vorbis ফাইলৰ হেণ্ডলাৰ',
 	'ogg-short-audio' => 'অগ $1 শব্দ ফাইল, $2',
 	'ogg-short-video' => 'অগ $1 ভিডিঅ’ ফাইল, $2',
 	'ogg-short-general' => 'অগ $1 মিডিয়া ফাইল, $2',
@@ -333,6 +334,8 @@ $messages['as'] = array(
 	'ogg-dismiss' => 'বন্ধ কৰক',
 	'ogg-download' => 'ফাইল ডাউনলোড কৰক',
 	'ogg-desc-link' => 'এই ফাইলৰ বৃত্তান্ত',
+	'ogg-oggThumb-version' => 'OggHandler-ক oggThumb সংস্কৰণ $1 বা পিছৰবোৰৰ প্ৰয়োজন।',
+	'ogg-oggThumb-failed' => 'oggThumb-এ ক্ষুদ্ৰ প্ৰতিকৃতি সৃষ্টি কৰাত ব্যৰ্থ হৈছে।',
 );
 
 /** Asturian (Asturianu)
