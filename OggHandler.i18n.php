@@ -2306,6 +2306,7 @@ udder sök Der en annder Affspellprojramm uß.',
 
 /** Kurdish (Latin script) (‪Kurdî (latînî)‬)
  * @author George Animal
+ * @author Ghybu
  * @author Gomada
  */
 $messages['ku-latn'] = array(
@@ -2314,7 +2315,11 @@ $messages['ku-latn'] = array(
 	'ogg-stop' => 'Bisekne',
 	'ogg-play-video' => 'Vîdeoyê bileyzîne',
 	'ogg-play-sound' => 'Deng veke',
+	'ogg-player-soundthumb' => "Player'ekî din tune",
+	'ogg-player-selected' => '(hatiye bijartin)',
 	'ogg-more' => 'Bêhtir...',
+	'ogg-dismiss' => 'Bigre',
+	'ogg-download' => 'Daneyê daxe',
 );
 
 /** Latin (Latina)
