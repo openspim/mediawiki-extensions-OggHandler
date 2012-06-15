@@ -324,6 +324,9 @@ $messages['as'] = array(
 	'ogg-play-video' => 'ভিডিঅ’ প্লে কৰক',
 	'ogg-play-sound' => 'শ্ৰাব্য ক্লিপ শুনক',
 	'ogg-no-player' => 'দুঃখিত, আপোনাৰ কম্পিউটাৰত ফাইলটো চলোৱাৰ বাবে প্ৰয়োজনীয় ছফটৱেৰ নাই। অনুগ্ৰহ কৰি <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">ছফটৱেৰটো ডাউনলোড কৰক</a>।',
+	'ogg-no-xiphqt' => 'আপোনাৰ কুইক্‌টাইম ছফ্টৱেৰটোত XiphQT উপাদানটো নাই।
+এই উপাদানটো নোহোৱাকৈ কুইক্‌টাইমে Ogg ফাইল চলাব নোৱাৰে।
+অনুগ্ৰহ কৰি <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">XiphQT ডাউনল\'ড কৰক</a> বা আন এটা প্লে\'য়াৰ ব্যৱহাৰ কৰক।',
 	'ogg-player-videoElement' => 'স্থানীয় ব্ৰাউজাৰ চাপোৰ্ট',
 	'ogg-player-oggPlugin' => 'ব্ৰাউজাৰ প্লাগ-ইন',
 	'ogg-player-thumbnail' => 'কেৱলমাত্ৰ স্থিৰ চিত্ৰ',
@@ -4098,6 +4101,7 @@ $messages['tt-cyrl'] = array(
 );
 
 /** Ukrainian (українська)
+ * @author A1
  * @author AS
  * @author AVRS
  * @author Ahonc
@@ -4114,9 +4118,9 @@ $messages['uk'] = array(
 	'ogg-short-general' => 'Файл Ogg $1, $2',
 	'ogg-long-audio' => 'звуковий файл Ogg $1, довжина $2, $3',
 	'ogg-long-video' => 'відео-файл Ogg $1, довжина $2, $4×$5 пікселів, $3',
-	'ogg-long-multiplexed' => '(мультиплексний аудіо/відео-файл ogg, $1, довжина $2, $4×$5 пікселів, $3 усього)',
-	'ogg-long-general' => '(медіа-файл Ogg, довжина $2, $3)',
-	'ogg-long-error' => '(Неправильний ogg-файл: $1)',
+	'ogg-long-multiplexed' => 'мультиплексний аудіо/відео-файл ogg, $1, довжина $2, $4×$5 пікселів, $3 усього',
+	'ogg-long-general' => 'медіа-файл Ogg, довжина $2, $3',
+	'ogg-long-error' => 'Неправильний ogg-файл: $1',
 	'ogg-play' => 'Відтворити',
 	'ogg-pause' => 'Пауза',
 	'ogg-stop' => 'Зупинити',
