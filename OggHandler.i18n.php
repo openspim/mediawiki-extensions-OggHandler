@@ -306,6 +306,7 @@ $messages['arz'] = array(
 
 /** Assamese (অসমীয়া)
  * @author Bishnu Saikia
+ * @author Chaipau
  * @author Gitartha.bordoloi
  */
 $messages['as'] = array(
@@ -329,6 +330,9 @@ $messages['as'] = array(
 অনুগ্ৰহ কৰি <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">XiphQT ডাউনল\'ড কৰক</a> বা আন এটা প্লে\'য়াৰ ব্যৱহাৰ কৰক।',
 	'ogg-player-videoElement' => 'স্থানীয় ব্ৰাউজাৰ চাপোৰ্ট',
 	'ogg-player-oggPlugin' => 'ব্ৰাউজাৰ প্লাগ-ইন',
+	'ogg-player-vlc-mozilla' => 'ভিএলচি',
+	'ogg-player-vlc-activex' => 'ভিএলচি (এক্টিভ-এক্স)',
+	'ogg-player-totem' => 'টোটেম',
 	'ogg-player-thumbnail' => 'কেৱলমাত্ৰ স্থিৰ চিত্ৰ',
 	'ogg-player-soundthumb' => 'কোনো প্লেয়াৰ নাই',
 	'ogg-player-selected' => '(নিৰ্বাচিত)',
@@ -1943,7 +1947,7 @@ $messages['ja'] = array(
 	'ogg-short-video' => 'Ogg $1 動画ファイル、$2',
 	'ogg-short-general' => 'Ogg $1 メディアファイル、$2',
 	'ogg-long-audio' => 'Ogg $1 音声ファイル、長さ $2、$3',
-	'ogg-long-video' => 'Ogg $1 動画ファイル、長さ $2、$4×$5px、$3',
+	'ogg-long-video' => 'Ogg $1 動画ファイル、長さ $2、$4×$5 ピクセル、$3',
 	'ogg-long-multiplexed' => 'Ogg 多重音声/動画ファイル、$1、長さ $2、$4×$5 ピクセル、全体で$3',
 	'ogg-long-general' => 'Ogg メディアファイル、長さ $2、$3',
 	'ogg-long-error' => '無効な Ogg ファイル：$1',
