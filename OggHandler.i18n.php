@@ -2253,6 +2253,13 @@ QuickTime은 이 구성 요소 없이는 Ogg 파일을 재생할 수 없습니�
 	'ogg-oggThumb-failed' => 'oggThumb가 섬네일을 생성하지 못했습니다.',
 );
 
+/** Karachay-Balkar (Къарачай-Малкъар)
+ * @author Iltever
+ */
+$messages['krc'] = array(
+	'ogg-more' => 'Кёбюрек…',
+);
+
 /** Kinaray-a (Kinaray-a)
  * @author Jose77
  */
