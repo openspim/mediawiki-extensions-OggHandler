@@ -48,6 +48,13 @@ $magicWords['de'] = array(
 	'ogg_thumbtime' => array( 0, 'miniaturdauer=$1', 'minidauer=$1' ),
 );
 
+/** Zazaki (Zazaki) */
+$magicWords['diq'] = array(
+	'ogg_noplayer' => array( 0, 'kaykerçıno' ),
+	'ogg_noicon' => array( 0, 'ikonçıno' ),
+	'ogg_thumbtime' => array( 0, 'demêresimi=$1' ),
+);
+
 /** Esperanto (Esperanto) */
 $magicWords['eo'] = array(
 	'ogg_noplayer' => array( 0, 'neniuludilo' ),
