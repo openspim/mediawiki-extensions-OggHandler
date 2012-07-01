@@ -161,7 +161,7 @@ $messages['aln'] = array(
 	'ogg-player-selected' => '(Zgjedhur)',
 );
 
-/** Aragonese (Aragonés)
+/** Aragonese (aragonés)
  * @author AVRS
  * @author Juanpabl
  */
@@ -504,7 +504,7 @@ $messages['be'] = array(
 	'ogg-dismiss' => 'Закрыць',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author AVRS
  * @author EugeneZelenko
  * @author Jim-by
@@ -793,11 +793,11 @@ $messages['cy'] = array(
 	'ogg-short-audio' => 'Ffeil sain Ogg $1, $2',
 	'ogg-short-video' => 'Ffeil fideo Ogg $1, $2',
 	'ogg-short-general' => 'Ffeil gyfrwng Ogg $1, $2',
-	'ogg-long-audio' => '(Ffeil sain Ogg $1, o hyd $2, $3)',
+	'ogg-long-audio' => 'Ffeil sain Ogg $1, o hyd $2, $3',
 	'ogg-long-video' => 'Ffeil fideo Ogg $1, o hyd $2, $4×$5 picsel, $3',
-	'ogg-long-multiplexed' => '(Ffeil sain/fideo amlbleth Ogg, $1, o hyd $2, $4×$5 picsel, $3 o ben i ben)',
-	'ogg-long-general' => '(Ffeil gyfrwng Ogg, o hyd $2, $3)',
-	'ogg-long-error' => '(Ffeil OGG annilys: $1)',
+	'ogg-long-multiplexed' => 'Ffeil sain/fideo amlbleth Ogg, $1, o hyd $2, $4×$5 picsel, $3 o ben i ben',
+	'ogg-long-general' => 'Ffeil gyfrwng Ogg, o hyd $2, $3',
+	'ogg-long-error' => 'Ffeil OGG annilys: $1',
 	'ogg-play' => 'Chwarae',
 	'ogg-pause' => 'Oedi',
 	'ogg-stop' => 'Aros',
@@ -942,7 +942,7 @@ kerem kerê<a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_do
 	'ogg-oggThumb-failed' => 'oggThumb nieskene thumbnail biviraze.',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author AVRS
  * @author Michawiki
  */
@@ -1396,7 +1396,7 @@ $messages['ga'] = array(
 	'ogg-dismiss' => 'Dún',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author AVRS
  * @author Toliño
  * @author Xosé
@@ -1642,7 +1642,7 @@ $messages['hr'] = array(
 	'ogg-oggThumb-failed' => 'oggThumb nije uspio stvoriti sličicu.',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author AVRS
  * @author Dundak
  * @author Michawiki
@@ -3342,7 +3342,7 @@ $messages['ru'] = array(
 	'ogg-oggThumb-failed' => 'oggThumb не удалось создать миниатюру.',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author AVRS
  * @author Gazeb
  */
@@ -3430,7 +3430,7 @@ $messages['scn'] = array(
 	'ogg-dismiss' => 'Chiùi',
 );
 
-/** Samogitian (Žemaitėška)
+/** Samogitian (žemaitėška)
  * @author Hugo.arg
  */
 $messages['sgs'] = array(
