@@ -3762,17 +3762,18 @@ $messages['su'] = array(
  * @author Lejonel
  * @author Rotsee
  * @author Skalman
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'ogg-desc' => 'Stöder filtyperna Ogg Theora och Ogg Vorbis med en JavaScript-baserad mediaspelare',
 	'ogg-short-audio' => 'Ogg $1 ljudfil, $2',
 	'ogg-short-video' => 'Ogg $1 videofil, $2',
 	'ogg-short-general' => 'Ogg $1 mediafil, $2',
-	'ogg-long-audio' => '(Ogg $1 ljudfil, längd $2, $3)',
+	'ogg-long-audio' => 'Ogg $1-ljudfil, längd $2, $3',
 	'ogg-long-video' => 'Ogg $1 videofil, längd $2, $4×$5 pixel, $3',
-	'ogg-long-multiplexed' => '(Ogg multiplexad ljud/video-fil, $1, längd $2, $4×$5 pixel, $3 totalt)',
-	'ogg-long-general' => '(Ogg mediafil, längd $2, $3)',
-	'ogg-long-error' => '(Felaktig ogg-fil: $1)',
+	'ogg-long-multiplexed' => 'Ogg multiplexad ljud/video-fil, $1, längd $2, $4×$5 pixlar, $3 totalt',
+	'ogg-long-general' => 'Ogg mediafil, längd $2, $3',
+	'ogg-long-error' => 'Felaktig ogg-fil: $1',
 	'ogg-play' => 'Spela upp',
 	'ogg-pause' => 'Pausa',
 	'ogg-stop' => 'Stoppa',
