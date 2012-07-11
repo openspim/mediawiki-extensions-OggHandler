@@ -416,7 +416,7 @@ $messages['az'] = array(
 	'ogg-download' => 'Fayl yüklə',
 );
 
-/** Bashkir (Башҡортса)
+/** Bashkir (башҡортса)
  * @author Haqmar
  * @author Roustammr
  * @author Рустам Нурыев
@@ -731,7 +731,7 @@ $messages['ca'] = array(
 	'ogg-oggThumb-failed' => "L'oggThumb no ha pogut crear una miniatura.",
 );
 
-/** Chechen (Нохчийн)
+/** Chechen (нохчийн)
  * @author Sasan700
  */
 $messages['ce'] = array(
@@ -2114,7 +2114,7 @@ $messages['kk-arab'] = array(
 	'ogg-desc-link' => 'بۇل فايل تۋرالى',
 );
 
-/** Kazakh (Cyrillic script) (‪Қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
  * @author AVRS
  */
 $messages['kk-cyrl'] = array(
@@ -2145,7 +2145,7 @@ $messages['kk-cyrl'] = array(
 	'ogg-desc-link' => 'Бұл файл туралы',
 );
 
-/** Kazakh (Latin script) (‪Qazaqşa (latın)‬)
+/** Kazakh (Latin script) (‪qazaqşa (latın)‬)
  * @author AVRS
  */
 $messages['kk-latn'] = array(
@@ -2253,7 +2253,7 @@ QuickTime은 이 구성 요소 없이는 Ogg 파일을 재생할 수 없습니�
 	'ogg-oggThumb-failed' => 'oggThumb가 섬네일을 생성하지 못했습니다.',
 );
 
-/** Karachay-Balkar (Къарачай-Малкъар)
+/** Karachay-Balkar (къарачай-малкъар)
  * @author Iltever
  */
 $messages['krc'] = array(
@@ -2381,7 +2381,7 @@ QuickTime kann Ogg-Fichiere net ouni dës Komponent spillen.
 	'ogg-oggThumb-failed' => 'oggThumb konnt kee Miniaturbild maachen.',
 );
 
-/** Lezghian (Лезги)
+/** Lezghian (лезги)
  * @author Migraghvi
  */
 $messages['lez'] = array(
@@ -2674,7 +2674,7 @@ $messages['mt'] = array(
 	'ogg-dismiss' => 'Agħlaq',
 );
 
-/** Erzya (Эрзянь)
+/** Erzya (эрзянь)
  * @author Botuzhaleny-sodamo
  */
 $messages['myv'] = array(
@@ -2697,9 +2697,9 @@ $messages['nah'] = array(
 	'ogg-desc-link' => 'Inīn tlahcuilōltechcopa',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author AVRS
- * @author Jon Harald Søby
+ * @author Danmichaelo
  * @author Laaknor
  * @author Nghtwlkr
  */
@@ -2708,11 +2708,11 @@ $messages['nb'] = array(
 	'ogg-short-audio' => 'Ogg $1 lydfil, $2',
 	'ogg-short-video' => 'Ogg $1 videofil, $2',
 	'ogg-short-general' => 'Ogg $1 mediefil, $2',
-	'ogg-long-audio' => '(Ogg $1 lydfil, lengde $2, $3)',
+	'ogg-long-audio' => 'Ogg $1-lydfil, lengde $2, $3',
 	'ogg-long-video' => 'Ogg $1 videofil, lengde $2, $4×$5 piksler, $3',
-	'ogg-long-multiplexed' => '(Sammensatt ogg lyd-/videofil, $1, lengde $2, $4×$5 piksler, $3 til sammen)',
-	'ogg-long-general' => '(Ogg mediefil, lengde $2, $3)',
-	'ogg-long-error' => '(Ugyldig ogg-fil: $1)',
+	'ogg-long-multiplexed' => 'Sammensatt ogg-lyd- og -videofil, $1, lengde $2, $4×$5 piksler, $3 samlet',
+	'ogg-long-general' => 'Ogg mediefil, lengde $2, $3',
+	'ogg-long-error' => 'Ugyldig ogg-fil: $1',
 	'ogg-play' => 'Spill',
 	'ogg-pause' => 'Pause',
 	'ogg-stop' => 'Stopp',
@@ -4200,7 +4200,7 @@ $messages['vec'] = array(
 	'ogg-oggThumb-failed' => "oggThumb no'l xe stà bon de crear la miniatura.",
 );
 
-/** Veps (Vepsän kel’)
+/** Veps (vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(

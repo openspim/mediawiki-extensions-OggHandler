@@ -35,7 +35,7 @@ $magicWords['arz'] = array(
 	'ogg_thumbtime' => array( 0, 'وقت_التصغير=$1', 'thumbtime=$1' ),
 );
 
-/** Chechen (Нохчийн) */
+/** Chechen (нохчийн) */
 $magicWords['ce'] = array(
 	'ogg_noplayer' => array( 0, 'яцлокхушйерг', 'нетпроигрывателя', 'noplayer' ),
 	'ogg_noicon' => array( 0, 'куцдац', 'нетзначка', 'noicon' ),
