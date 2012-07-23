@@ -50,8 +50,8 @@ $magicWords['de'] = array(
 
 /** Zazaki (Zazaki) */
 $magicWords['diq'] = array(
-	'ogg_noplayer' => array( 0, 'kaykerçıno' ),
-	'ogg_noicon' => array( 0, 'ikonçıno' ),
+	'ogg_noplayer' => array( 0, 'kaykerçıniyo' ),
+	'ogg_noicon' => array( 0, 'ikonçıniyo' ),
 	'ogg_thumbtime' => array( 0, 'demêresimi=$1' ),
 );
 
