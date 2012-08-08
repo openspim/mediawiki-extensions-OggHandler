@@ -3381,12 +3381,22 @@ $messages['rue'] = array(
 
 /** Sanskrit (संस्कृतम्)
  * @author Ansumang
+ * @author Shubha
  */
 $messages['sa'] = array(
-	'ogg-play' => 'प्रयोग',
-	'ogg-pause' => 'विराम',
+	'ogg-play' => 'प्रवर्तनम्',
+	'ogg-pause' => 'विरामः',
 	'ogg-stop' => 'स्थापयति',
-	'ogg-dismiss' => 'निबिड',
+	'ogg-play-video' => 'दृश्यं प्रवर्त्यताम्',
+	'ogg-play-sound' => 'शब्दस्य प्रवर्तनम्',
+	'ogg-player-thumbnail' => 'स्थिरचित्रमात्रम्',
+	'ogg-player-soundthumb' => 'क्रीडकः नास्ति',
+	'ogg-player-selected' => '(चितम्)',
+	'ogg-use-player' => 'क्रीडकस्य उपयोगः स्वीक्रियताम् :',
+	'ogg-more' => 'अधिकम्.....',
+	'ogg-dismiss' => 'पिदधातु',
+	'ogg-download' => 'सञ्चिकायाः अवारोपणम्',
+	'ogg-desc-link' => 'अस्याः सञ्चिकायाः विषये',
 );
 
 /** Sakha (саха тыла)
