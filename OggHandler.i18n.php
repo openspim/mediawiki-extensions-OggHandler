@@ -995,11 +995,11 @@ $messages['el'] = array(
 	'ogg-short-audio' => 'Αρχείο ήχου Ogg $1, $2',
 	'ogg-short-video' => 'Αρχείο βίντεο Ogg $1, $2',
 	'ogg-short-general' => 'Αρχείο μέσων Ogg $1, $2',
-	'ogg-long-audio' => '(Αρχείο ήχου Ogg $1, διάρκεια $2, $3)',
+	'ogg-long-audio' => 'Αρχείο ήχου Ogg $1, διάρκεια $2, $3',
 	'ogg-long-video' => 'Αρχείο βίντεο Ogg $1, διάρκεια $2, $4×$5 pixels, $3',
-	'ogg-long-multiplexed' => '(Αρχείο πολυπλεκτικού ήχου/βίντεο Ogg, $1, διάρκεια $2, $4×$5 pixels, $3 ολικά)',
-	'ogg-long-general' => '(Αρχείο μέσων Ogg, διάρκεια $2, $3)',
-	'ogg-long-error' => '(Άκυρο αρχείο ogg: $1)',
+	'ogg-long-multiplexed' => 'Αρχείο πολυπλεκτικού ήχου/βίντεο Ogg, $1, διάρκεια $2, $4×$5 pixels, $3 ολικά',
+	'ogg-long-general' => 'Αρχείο ήχου Ogg, διάρκεια $2, $3',
+	'ogg-long-error' => 'Μη έγκυρο αρχείο ogg: $1',
 	'ogg-play' => 'Αναπαραγωγή',
 	'ogg-pause' => 'Παύση',
 	'ogg-stop' => 'Διακοπή',
@@ -1035,11 +1035,11 @@ $messages['eo'] = array(
 	'ogg-short-audio' => 'Ogg $1 sondosiero, $2',
 	'ogg-short-video' => 'Ogg $1 videodosiero, $2',
 	'ogg-short-general' => 'Media ogg-dosiero $1, $2',
-	'ogg-long-audio' => '(Aŭda ogg-dosiero $1, longeco $2, $3 entute)',
+	'ogg-long-audio' => 'Aŭda ogg-dosiero $1, longeco $2, $3',
 	'ogg-long-video' => 'Video ogg-dosiero $1, longeco $2, $4×$5 pikseloj, $3 entute',
 	'ogg-long-multiplexed' => 'Kunigita aŭdio/video ogg-dosiero, $1, longeco $2, $4×$5 pikseloj, $3 entute',
-	'ogg-long-general' => '(Ogg-mediodosiero, longeco $2, $3)',
-	'ogg-long-error' => '(Malvalida ogg-dosiero: $1)',
+	'ogg-long-general' => 'Ogg-mediodosiero, longeco $2, $3',
+	'ogg-long-error' => 'Malvalida ogg-dosiero: $1',
 	'ogg-play' => 'Legi',
 	'ogg-pause' => 'Paŭzi',
 	'ogg-stop' => 'Halti',
@@ -2338,6 +2338,27 @@ $messages['ku-latn'] = array(
 	'ogg-download' => 'Daneyê daxe',
 );
 
+/** Kirghiz (Кыргызча)
+ * @author Chorobek
+ */
+$messages['ky'] = array(
+	'ogg-play' => 'Ойно',
+	'ogg-pause' => 'Пауза',
+	'ogg-stop' => 'Токтот',
+	'ogg-play-video' => 'Видеону ойнот',
+	'ogg-play-sound' => 'Үндү ойнот',
+	'ogg-player-videoElement' => 'Колдонуу серепчиге жалгаштырылган',
+	'ogg-player-oggPlugin' => 'Серепчинин плагини',
+	'ogg-player-thumbnail' => 'Сүрөттөр гана',
+	'ogg-player-soundthumb' => 'Ойноткуч жок',
+	'ogg-player-selected' => '(тандалган)',
+	'ogg-use-player' => ': ойноткучун колдон',
+	'ogg-more' => 'Дагы...',
+	'ogg-dismiss' => 'Жап',
+	'ogg-download' => 'Файлды жүктө',
+	'ogg-desc-link' => 'Бул файл тууралуу',
+);
+
 /** Latin (Latina)
  * @author SPQRobin
  */
@@ -2673,6 +2694,20 @@ $messages['ms'] = array(
  * @author Chrisportelli
  */
 $messages['mt'] = array(
+	'ogg-desc' => 'Maniġer għall-fajls Ogg Theora u Vorbis, bil-plejer tal-Javascript',
+	'ogg-short-audio' => 'Fajl tal-awdjo Ogg $1, $2',
+	'ogg-short-video' => 'Fajl tal-vidjo $1, $2',
+	'ogg-short-general' => 'Fajl multimedjali Ogg $1, $2',
+	'ogg-long-audio' => 'Fajl tal-awdjo Ogg $1, tul $2, $3',
+	'ogg-long-video' => 'Fajl tal-vidjo $1, tul $2, dimensjoni $4×$5 pixels, $3',
+	'ogg-long-multiplexed' => 'Fajl tal-awdjo/vidjo <i>multiplexed</i> Ogg $1, tul $2, dimensjoni $4×$5 pixels, kumplessivament $3',
+	'ogg-long-general' => 'Fajl multimedjali Ogg, tul $2, $3',
+	'ogg-long-error' => 'Fajl ogg invalidu: $1',
+	'ogg-pause' => 'Issospendi',
+	'ogg-stop' => 'Waqqaf',
+	'ogg-play-video' => 'Esegwixxi l-vidjo',
+	'ogg-play-sound' => 'Esegwixxi l-fajl tal-ħoss',
+	'ogg-no-player' => 'Skużana, is-sistema tiegħek tidher li ma ssostnix l-ebda softwer plejer kompatibbli. Jekk jogħġbok, <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">niżżel plejer</a>.',
 	'ogg-dismiss' => 'Agħlaq',
 );
 
@@ -3357,7 +3392,7 @@ $messages['rue'] = array(
 	'ogg-long-video' => 'відео-файл Ogg $1, довжка $2, $4×$5 пікселів, $3',
 	'ogg-long-multiplexed' => '(мултіплексный аудіо/відео-файл ogg, $1, довжка $2, $4×$5 пікселів, $3 вшыткого)',
 	'ogg-long-general' => '(медіа-файл Ogg, довжка $2, $3)',
-	'ogg-long-error' => '(Неправилный ogg-файл: $1)',
+	'ogg-long-error' => 'Неправильный файл Ogg: $1',
 	'ogg-play' => 'Заграти',
 	'ogg-pause' => 'Пауза',
 	'ogg-stop' => 'Заставити',
@@ -3623,7 +3658,7 @@ $messages['sr-ec'] = array(
 	'ogg-long-video' => 'Ogg $1 видео-снимак, трајање $2, $4 × $5 пиксела, $3',
 	'ogg-long-multiplexed' => 'Мултиплексирани .ogg аудио/видео снимак, $1, трајање $2, $4 × $5 пиксела, $3',
 	'ogg-long-general' => 'Ogg медијска датотека, трајање $2, $3.',
-	'ogg-long-error' => '(неисправна .ogg датотека: $1)',
+	'ogg-long-error' => 'Неисправна ogg датотека: $1',
 	'ogg-play' => 'Пусти',
 	'ogg-pause' => 'Паузирај',
 	'ogg-stop' => 'Заустави',
