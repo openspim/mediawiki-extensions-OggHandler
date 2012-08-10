@@ -929,7 +929,7 @@ kerem kerê <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_d
 heta ke parçeyê QuickTimeyi çinibi dosyayê Oggyi nêxebıtiyeni.
 kerem kerê<a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">XiphQT\'i biyar war</a> ya zi yewna player bıvıcinê.',
 	'ogg-player-videoElement' => 'destekê cıgêrayoxê mehelliyi',
-	'ogg-player-oggPlugin' => 'zeylê cıgêrayoxi',
+	'ogg-player-oggPlugin' => 'Zeylê rovıteri',
 	'ogg-player-totem' => 'Totem',
 	'ogg-player-kmplayer' => 'KMPlayer',
 	'ogg-player-thumbnail' => 'hema têna resm o.',
@@ -1771,6 +1771,7 @@ Per favor <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_dow
  * @author Farras
  * @author Irwangatot
  * @author IvanLanin
+ * @author Kenrick95
  * @author Rex
  */
 $messages['id'] = array(
@@ -1778,11 +1779,11 @@ $messages['id'] = array(
 	'ogg-short-audio' => 'Berkas suara $1 ogg, $2',
 	'ogg-short-video' => 'Berkas video $1 ogg, $2',
 	'ogg-short-general' => 'Berkas media $1 ogg, $2',
-	'ogg-long-audio' => '(Berkas suara $1 ogg, panjang $2, $3)',
+	'ogg-long-audio' => 'Berkas suara $1 ogg, panjang $2, $3',
 	'ogg-long-video' => 'Berkas video $1 ogg, panjang $2, $4×$5 piksel, $3',
-	'ogg-long-multiplexed' => '(Berkas audio/video multiplexed ogg, $1, panjang $2, $4×$5 piksel, $3 keseluruhan)',
-	'ogg-long-general' => '(Berkas media ogg, panjang $2, $3)',
-	'ogg-long-error' => '(Berkas ogg tak valid: $1)',
+	'ogg-long-multiplexed' => 'Berkas audio/video multiplexed ogg, $1, panjang $2, $4×$5 piksel, $3 keseluruhan',
+	'ogg-long-general' => 'Berkas media ogg, panjang $2, $3',
+	'ogg-long-error' => 'Berkas ogg tak valid: $1',
 	'ogg-play' => 'Mainkan',
 	'ogg-pause' => 'Jeda',
 	'ogg-stop' => 'Berhenti',
@@ -2708,7 +2709,18 @@ $messages['mt'] = array(
 	'ogg-play-video' => 'Esegwixxi l-vidjo',
 	'ogg-play-sound' => 'Esegwixxi l-fajl tal-ħoss',
 	'ogg-no-player' => 'Skużana, is-sistema tiegħek tidher li ma ssostnix l-ebda softwer plejer kompatibbli. Jekk jogħġbok, <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">niżżel plejer</a>.',
+	'ogg-no-xiphqt' => 'Jidher li m\'għandekx il-komponent XiphQT tal-QuickTime. QuickTime ma jistax jesegwixxi fajls Ogg mingħajr il-komponent. Jekk jogħġbok <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">niżżel XiphQT</a> jew għażel plejer ieħor.',
+	'ogg-player-oggPlugin' => '<i>Plugin</i> tal-browżer',
+	'ogg-player-thumbnail' => 'Stampi fissi biss',
+	'ogg-player-soundthumb' => 'L-ebda plejer',
+	'ogg-player-selected' => '(magħżul)',
+	'ogg-use-player' => 'Uża l-plejer:',
+	'ogg-more' => 'Iktar…',
 	'ogg-dismiss' => 'Agħlaq',
+	'ogg-download' => 'Niżżel il-fajl',
+	'ogg-desc-link' => 'Dwar dan il-fajl',
+	'ogg-oggThumb-version' => "OggHandler għandu bżonn tal-verżjoni $1 jew iktar tard ta' oggThumb.",
+	'ogg-oggThumb-failed' => 'oggThumb falla li joħloq minjatura.',
 );
 
 /** Erzya (эрзянь)
@@ -3164,6 +3176,7 @@ $messages['ps'] = array(
  * @author AVRS
  * @author Hamilton Abreu
  * @author Malafaya
+ * @author SandroHc
  * @author Waldir
  */
 $messages['pt'] = array(
@@ -3171,11 +3184,11 @@ $messages['pt'] = array(
 	'ogg-short-audio' => 'Áudio Ogg $1, $2',
 	'ogg-short-video' => 'Vídeo Ogg $1, $2',
 	'ogg-short-general' => 'Multimédia Ogg $1, $2',
-	'ogg-long-audio' => '(Áudio Ogg $1, $2 de duração, $3)',
+	'ogg-long-audio' => 'Áudio Ogg $1, $2 de duração, $3',
 	'ogg-long-video' => 'Vídeo Ogg $1, $2 de duração, $4×$5 pixels, $3',
-	'ogg-long-multiplexed' => '(Áudio/vídeo Ogg multifacetado, $1, $2 de duração, $4×$5 pixels, $3 no todo)',
-	'ogg-long-general' => '(Multimédia Ogg, $2 de duração, $3)',
-	'ogg-long-error' => '(Ficheiro ogg inválido: $1)',
+	'ogg-long-multiplexed' => 'Áudio/vídeo Ogg multifacetado, $1, $2 de duração, $4×$5 pixels, $3 no todo',
+	'ogg-long-general' => 'Multimédia Ogg, $2 de duração, $3',
+	'ogg-long-error' => 'Ficheiro ogg inválido: $1',
 	'ogg-play' => 'Reproduzir',
 	'ogg-pause' => 'Pausar',
 	'ogg-stop' => 'Parar',
@@ -3388,10 +3401,10 @@ $messages['rue'] = array(
 	'ogg-short-audio' => 'Звуковый файл Ogg $1, $2',
 	'ogg-short-video' => 'Відео-файл Ogg $1, $2',
 	'ogg-short-general' => 'Файл Ogg $1, $2',
-	'ogg-long-audio' => '(звуковый файл Ogg $1, довжка $2, $3)',
+	'ogg-long-audio' => 'Звуковый файл Ogg $1, довжка $2, $3',
 	'ogg-long-video' => 'відео-файл Ogg $1, довжка $2, $4×$5 пікселів, $3',
-	'ogg-long-multiplexed' => '(мултіплексный аудіо/відео-файл ogg, $1, довжка $2, $4×$5 пікселів, $3 вшыткого)',
-	'ogg-long-general' => '(медіа-файл Ogg, довжка $2, $3)',
+	'ogg-long-multiplexed' => 'Авдіо/відео файл ogg, $1, довжка $2, $4×$5 пікселів, вшыткого $3',
+	'ogg-long-general' => 'Ogg медія файл, довжка $2, $3',
 	'ogg-long-error' => 'Неправильный файл Ogg: $1',
 	'ogg-play' => 'Заграти',
 	'ogg-pause' => 'Пауза',
@@ -3493,13 +3506,14 @@ $messages['sgs'] = array(
  * @author AVRS
  * @author Budhajeewa
  * @author නන්දිමිතුරු
+ * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
 	'ogg-desc' => 'Ogg Theora සහ Vorbis ගොනු සඳහා හසුරුවනය, ජාවාස්ක්‍රිප්ට් ප්ලේයර් සමඟ',
 	'ogg-short-audio' => 'Ogg $1 ශ්‍රව්‍ය ගොනුව, $2',
 	'ogg-short-video' => 'Ogg $1 දෘශ්‍ය ගොනුව, $2',
 	'ogg-short-general' => 'Ogg $1 මාධ්‍ය ගොනුව, $2',
-	'ogg-long-audio' => '(Ogg $1 ශ්‍රව්‍ය ගොනුව, ප්‍රවර්තනය $2, $3)',
+	'ogg-long-audio' => 'Ogg $1 ශ්‍රව්‍ය ගොනුව, ප්‍රවර්තනය $2, $3',
 	'ogg-long-video' => 'Ogg $1 දෘශ්‍ය ගොනුව, ප්‍රවර්තනය $2, $4×$5 පික්සල්, $3',
 	'ogg-long-multiplexed' => '(Ogg බහුපථකාරක ශ්‍රව්‍ය/දෘශ්‍ය ගොනුව, $1, ප්‍රවර්තනය $2, $4×$5 පික්සල්, $3 සමස්ත)',
 	'ogg-long-general' => '(Ogg මාධ්‍ය ගොනුව, ප්‍රවර්තනය $2, $3)',
