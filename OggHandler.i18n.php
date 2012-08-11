@@ -3432,11 +3432,24 @@ $messages['rue'] = array(
  * @author Shubha
  */
 $messages['sa'] = array(
+	'ogg-desc' => 'जावालिप्या सह आग् थियोरा, वोब्रिस्-सञ्चिकानां चालकः',
+	'ogg-short-audio' => 'ऑग $1 ध्वनिसञ्चिका, $2',
+	'ogg-short-video' => 'ऑग $1 दृश्यसञ्चिका, $2',
+	'ogg-short-general' => 'ऑग $1 माध्यमसञ्चिका, $2',
+	'ogg-long-audio' => 'आग् $1 ध्वनिसञ्चिका, औन्नत्यम् $2, $3',
+	'ogg-long-video' => 'ऑग $1 चलनचित्रसञ्चिका, दैर्घ्यं $2, $4×$5 पीक्सेल्स, $3',
+	'ogg-long-multiplexed' => 'आग् सङ्कीर्णश्रव्य/दृश्यसञ्चिका, $1, दैर्घ्यम् $2, $4×$5 पिक्सल्स्, $3 समग्रम्',
+	'ogg-long-general' => 'आग् माध्यमसञ्चिका, औन्नत्यम् $2, $3',
+	'ogg-long-error' => 'अमान्या आग् सञ्चिका : $1',
 	'ogg-play' => 'प्रवर्तनम्',
 	'ogg-pause' => 'विरामः',
 	'ogg-stop' => 'स्थापयति',
 	'ogg-play-video' => 'दृश्यं प्रवर्त्यताम्',
 	'ogg-play-sound' => 'शब्दस्य प्रवर्तनम्',
+	'ogg-no-player' => 'क्षम्यताम्, भवतः व्यवस्थायाम् अनुकूलचालकतन्त्रांशः कोपि न विद्यते ।
+कृपया <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">चालकमेकम् उपारोप्यताम्</a> ।',
+	'ogg-player-videoElement' => 'मूलगवेषकसमर्थनम्',
+	'ogg-player-oggPlugin' => 'गवेशकप्लगिन्',
 	'ogg-player-thumbnail' => 'स्थिरचित्रमात्रम्',
 	'ogg-player-soundthumb' => 'क्रीडकः नास्ति',
 	'ogg-player-selected' => '(चितम्)',
@@ -3445,6 +3458,8 @@ $messages['sa'] = array(
 	'ogg-dismiss' => 'पिदधातु',
 	'ogg-download' => 'सञ्चिकायाः अवारोपणम्',
 	'ogg-desc-link' => 'अस्याः सञ्चिकायाः विषये',
+	'ogg-oggThumb-version' => 'आग्चालकस्य कृते आग्थम्ब्-आवृत्तिः $1 तदग्रिमा वा अपेक्षिता ।',
+	'ogg-oggThumb-failed' => 'लघ्वाकृतेः निर्माणे आग्थम्ब् असमर्थं जातम् ।',
 );
 
 /** Sakha (саха тыла)
@@ -3856,9 +3871,17 @@ $messages['sv'] = array(
 	'ogg-oggThumb-failed' => 'oggThumb misslyckades med att skapa miniatyrbilden.',
 );
 
-/** Swahili (Kiswahili) */
+/** Swahili (Kiswahili)
+ * @author Stephenwanjau
+ */
 $messages['sw'] = array(
+	'ogg-play-video' => 'Cheza video',
+	'ogg-play-sound' => 'Cheza sauti',
+	'ogg-player-selected' => '(imechaguliwa)',
+	'ogg-more' => 'zaidi...',
 	'ogg-dismiss' => 'Funga',
+	'ogg-download' => 'Pakua faili',
+	'ogg-desc-link' => 'Kuhusu faili hii',
 );
 
 /** Tamil (தமிழ்)
