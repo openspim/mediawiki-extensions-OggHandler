@@ -2253,7 +2253,7 @@ QuickTime은 이 구성 요소 없이는 Ogg 파일을 재생할 수 없습니�
 	'ogg-download' => '파일 다운로드',
 	'ogg-desc-link' => '파일 정보',
 	'ogg-oggThumb-version' => 'OggHandler는 oggThumb 버전 $1 이상을 요구합니다.',
-	'ogg-oggThumb-failed' => 'oggThumb가 섬네일을 생성하지 못했습니다.',
+	'ogg-oggThumb-failed' => 'oggThumb가 섬네일을 만들지 못했습니다.',
 );
 
 /** Karachay-Balkar (къарачай-малкъар)
