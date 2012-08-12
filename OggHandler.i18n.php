@@ -695,6 +695,7 @@ Molimo Vas da <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client
 /** Catalan (català)
  * @author AVRS
  * @author Aleator
+ * @author Arnaugir
  * @author Paucabot
  * @author SMP
  * @author Toniher
@@ -705,11 +706,11 @@ $messages['ca'] = array(
 	'ogg-short-audio' => "Fitxer OGG d'àudio $1, $2",
 	'ogg-short-video' => 'Fitxer OGG de vídeo $1, $2',
 	'ogg-short-general' => 'Fitxer multimèdia OGG $1, $2',
-	'ogg-long-audio' => '(Ogg $1 fitxer de so, llargada $2, $3)',
+	'ogg-long-audio' => 'Fitxer de so Ogg $1, llargada $2, $3',
 	'ogg-long-video' => 'Fitxer OGG de vídeo $1, llargada $2, $4×$5 píxels, $3',
-	'ogg-long-multiplexed' => '(Arxiu àudio/vídeo multiplex, $1, llargada $2, $4×$5 píxels, $3 de mitjana)',
-	'ogg-long-general' => '(Fitxer multimèdia OGG, llargada $2, $3)',
-	'ogg-long-error' => '(Fitxer OGG invàlid: $1)',
+	'ogg-long-multiplexed' => "Arxiu d'àudio/vídeo Ogg multiplex, $1, llargada $2, $4×$5 píxels, $3 general",
+	'ogg-long-general' => 'Fitxer multimèdia Ogg, llargada $2, $3',
+	'ogg-long-error' => 'Fitxer Ogg invàlid: $1',
 	'ogg-play' => 'Reprodueix',
 	'ogg-pause' => 'Pausa',
 	'ogg-stop' => 'Atura',
@@ -1605,6 +1606,14 @@ QuickTime बिना इस घटक के Ogg files चलने में 
 	'ogg-desc-link' => 'इस फ़ाईलके बारे में',
 );
 
+/** Fiji Hindi (Latin script) (Fiji Hindi)
+ * @author Karthi.dr
+ */
+$messages['hif-latn'] = array(
+	'ogg-more' => 'Aur...',
+	'ogg-dismiss' => 'Band karo',
+);
+
 /** Croatian (hrvatski)
  * @author AVRS
  * @author CERminator
@@ -2011,6 +2020,7 @@ $messages['jut'] = array(
 /** Javanese (Basa Jawa)
  * @author AVRS
  * @author Meursault2004
+ * @author NoiX180
  * @author Pras
  */
 $messages['jv'] = array(
@@ -2018,11 +2028,11 @@ $messages['jv'] = array(
 	'ogg-short-audio' => 'Berkas swara $1 ogg, $2',
 	'ogg-short-video' => 'Berkas vidéo $1 ogg, $2',
 	'ogg-short-general' => 'Berkas média $1 ogg, $2',
-	'ogg-long-audio' => '(Berkas swara $1 ogg, dawané $2, $3)',
+	'ogg-long-audio' => 'Berkas swara $1 ogg, dawané $2, $3',
 	'ogg-long-video' => 'Berkas vidéo $1 ogg, dawané $2, $4×$5 piksel, $3',
-	'ogg-long-multiplexed' => '(Berkas audio/vidéo multiplexed ogg, $1, dawané $2, $4×$5 piksel, $3 gunggungé)',
-	'ogg-long-general' => '(Berkas média ogg, dawané $2, $3)',
-	'ogg-long-error' => '(Berkas ogg ora absah: $1)',
+	'ogg-long-multiplexed' => 'Berkas odio/pidio multiplèks ogg, $1, dawané $2, $4×$5 piksel, $3 kabéhé',
+	'ogg-long-general' => 'Berkas média ogg, dawané $2, $3',
+	'ogg-long-error' => 'Berkas ogg ora sah: $1',
 	'ogg-play' => 'Main',
 	'ogg-pause' => 'Lèrèn',
 	'ogg-stop' => 'Mandeg',
@@ -4362,8 +4372,19 @@ $messages['wa'] = array(
  * @author פוילישער
  */
 $messages['yi'] = array(
+	'ogg-short-audio' => 'Ogg $1 קלאנג טעקע, $2',
+	'ogg-short-video' => 'Ogg $1 ווידעא טעקע, $2',
+	'ogg-short-general' => 'Ogg $1 מעדיע טעקע, $2',
+	'ogg-long-audio' => 'Ogg $1 קול טעקע, לענג $2, $3',
+	'ogg-long-video' => 'Ogg  $1 ווידעא טעקע, לענג $2, $4×$5 פיקסעלן, $3',
 	'ogg-play' => 'שפּיל',
 	'ogg-pause' => 'פויזע',
+	'ogg-stop' => 'הערט אויף!',
+	'ogg-play-video' => 'שפילן ווידעא',
+	'ogg-play-sound' => 'שפילן קלאַנג',
+	'ogg-player-soundthumb' => 'קיין שפילער',
+	'ogg-player-selected' => '(אויסגעוויילט)',
+	'ogg-use-player' => 'ניצן שפילער:',
 	'ogg-more' => 'נאך…',
 	'ogg-dismiss' => 'שליסן',
 	'ogg-download' => 'אראָפלאָדן טעקע',
@@ -4448,7 +4469,7 @@ $messages['zh-hans'] = array(
 	'ogg-dismiss' => '关闭',
 	'ogg-download' => '下载文件',
 	'ogg-desc-link' => '关于这个文件',
-	'ogg-oggThumb-version' => 'OggHandler需要oggThumb $1或者之后的版本',
+	'ogg-oggThumb-version' => 'OggHandler需要oggThumb $1或者之后的版本。',
 	'ogg-oggThumb-failed' => 'oggThumb未能创建缩略图。',
 );
 
