@@ -931,8 +931,14 @@ heta ke parçeyê QuickTimeyi çinibi dosyayê Oggyi nêxebıtiyeni.
 kerem kerê<a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">XiphQT\'i biyar war</a> ya zi yewna player bıvıcinê.',
 	'ogg-player-videoElement' => 'destekê cıgêrayoxê mehelliyi',
 	'ogg-player-oggPlugin' => 'Zeylê rovıteri',
+	'ogg-player-vlc-mozilla' => 'VLC',
+	'ogg-player-vlc-activex' => 'VLC (ActiveX)',
+	'ogg-player-quicktime-mozilla' => 'QuickTime',
+	'ogg-player-quicktime-activex' => 'QuickTime (ActiveX)',
 	'ogg-player-totem' => 'Totem',
 	'ogg-player-kmplayer' => 'KMPlayer',
+	'ogg-player-kaffeine' => 'Kaffeine',
+	'ogg-player-mplayerplug-in' => 'mplayerplug-in',
 	'ogg-player-thumbnail' => 'hema têna resm o.',
 	'ogg-player-soundthumb' => 'player çino',
 	'ogg-player-selected' => '(vıciyaye)',
@@ -1325,11 +1331,11 @@ $messages['frp'] = array(
 	'ogg-short-audio' => 'fichiér son Ogg $1, $2',
 	'ogg-short-video' => 'Fichiér vidèô Ogg $1, $2',
 	'ogg-short-general' => 'Fichiér mèdia Ogg $1, $2',
-	'ogg-long-audio' => '(Fichiér son Ogg $1, temps $2, $3)',
+	'ogg-long-audio' => 'Fichiér son Ogg $1, durâ $2, $3',
 	'ogg-long-video' => 'fichiér vidèô Ogg $1, temps $2, $4×$5 pixèls, $3',
-	'ogg-long-multiplexed' => '(fichiér multiplèxo ôdiô / vidèô Ogg, $1, temps $2, $4×$5 pixèls, en tot $3)',
-	'ogg-long-general' => '(Fichiér mèdia Ogg, temps $2, $3)',
-	'ogg-long-error' => '(Fichiér Ogg envalido : $1)',
+	'ogg-long-multiplexed' => 'Fichiér multiplèxo ôdiô / vidèô Ogg, $1, durâ $2, $4×$5 pixèls, en tot $3',
+	'ogg-long-general' => 'Fichiér mèdia Ogg, durâ $2, $3',
+	'ogg-long-error' => 'Fichiér Ogg envalido : $1',
 	'ogg-play' => 'Liére',
 	'ogg-pause' => 'Pousa',
 	'ogg-stop' => 'Arrét',
@@ -2053,6 +2059,7 @@ Please <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_downlo
 	'ogg-dismiss' => 'Tutup',
 	'ogg-download' => 'Undhuh berkas',
 	'ogg-desc-link' => 'Prekara berkas iki',
+	'ogg-oggThumb-failed' => 'oggTumb gagal nggawé gambar mini.',
 );
 
 /** Georgian (ქართული)
@@ -2714,6 +2721,7 @@ $messages['mt'] = array(
 	'ogg-long-multiplexed' => 'Fajl tal-awdjo/vidjo <i>multiplexed</i> Ogg $1, tul $2, dimensjoni $4×$5 pixels, kumplessivament $3',
 	'ogg-long-general' => 'Fajl multimedjali Ogg, tul $2, $3',
 	'ogg-long-error' => 'Fajl ogg invalidu: $1',
+	'ogg-play' => 'Esegwixxi',
 	'ogg-pause' => 'Issospendi',
 	'ogg-stop' => 'Waqqaf',
 	'ogg-play-video' => 'Esegwixxi l-vidjo',
@@ -3895,6 +3903,7 @@ $messages['sw'] = array(
 );
 
 /** Tamil (தமிழ்)
+ * @author Karthi.dr
  * @author Shanmugamp7
  * @author Sodabottle
  * @author TRYPPN
@@ -3915,7 +3924,7 @@ $messages['ta'] = array(
 	'ogg-no-player' => 'மன்னிக்கவும், உங்கள் கணினியில் எந்த ஒரு ஆதரவு ஓடல்  மென்பொருளும் இருப்பதாக தெரியவில்லை.
 தயவுசெய்து <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">ஒரு ஓடல்  மென்பொருளை தகவலிறக்கம் செய்யவும்</a>.',
 	'ogg-player-videoElement' => 'சொந்த உலாவி ஆதரவு',
-	'ogg-player-oggPlugin' => 'மேய்வான் செருகுநிரல்',
+	'ogg-player-oggPlugin' => 'உலாவி செருகுநிரல்',
 	'ogg-player-thumbnail' => 'நிழற்படம் மட்டும்',
 	'ogg-player-soundthumb' => 'ஓடல் மென்பொருள் இல்லை',
 	'ogg-player-selected' => '(தேர்ந்தெடுத்தது)',
@@ -3923,7 +3932,7 @@ $messages['ta'] = array(
 	'ogg-more' => 'மேலும்...',
 	'ogg-dismiss' => 'மூடுக',
 	'ogg-download' => 'கோப்பை பதிவிறக்கம் செய்',
-	'ogg-desc-link' => 'இந்த கோப்பைப் பற்றி',
+	'ogg-desc-link' => 'இந்தக் கோப்பைப் பற்றி',
 	'ogg-oggThumb-version' => 'OggHandler ஆனது oggThumb பதிப்பு  $1 அதற்கு மேல் உள்ளவற்றை வேண்டுகிறது.',
 	'ogg-oggThumb-failed' => 'இந்த சிறுஉருவம் உருவாக்க oggThumb தோல்வியுற்றது.',
 );
