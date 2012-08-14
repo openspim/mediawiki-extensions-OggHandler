@@ -612,6 +612,7 @@ $messages['bn'] = array(
 	'ogg-dismiss' => 'বন্ধ',
 	'ogg-download' => 'ফাইল ডাউনলোড করুন',
 	'ogg-desc-link' => 'এই ফাইলের বৃত্তান্ত',
+	'ogg-oggThumb-failed' => 'oggThumb থাম্বনেইল তৈরী করতে পারেনি।',
 );
 
 /** Breton (brezhoneg)
@@ -2059,6 +2060,7 @@ Please <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_downlo
 	'ogg-dismiss' => 'Tutup',
 	'ogg-download' => 'Undhuh berkas',
 	'ogg-desc-link' => 'Prekara berkas iki',
+	'ogg-oggThumb-version' => 'OggHandler mbutuhaké oggThumb vèrsi $1 utawa sakbanjuré.',
 	'ogg-oggThumb-failed' => 'oggTumb gagal nggawé gambar mini.',
 );
 
@@ -3890,9 +3892,12 @@ $messages['sv'] = array(
 );
 
 /** Swahili (Kiswahili)
+ * @author Kwisha
  * @author Stephenwanjau
  */
 $messages['sw'] = array(
+	'ogg-play' => 'Cheza',
+	'ogg-stop' => 'Komesha',
 	'ogg-play-video' => 'Cheza video',
 	'ogg-play-sound' => 'Cheza sauti',
 	'ogg-player-selected' => '(imechaguliwa)',
