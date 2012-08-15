@@ -211,11 +211,11 @@ $messages['ar'] = array(
 	'ogg-short-audio' => 'Ogg $1 ملف صوت، $2',
 	'ogg-short-video' => 'Ogg $1 ملف فيديو، $2',
 	'ogg-short-general' => 'Ogg $1 ملف ميديا، $2',
-	'ogg-long-audio' => '(Ogg $1 ملف صوت، الطول $2، $3)',
+	'ogg-long-audio' => 'Ogg $1 ملف صوت، الطول $2، $3',
 	'ogg-long-video' => 'Ogg $1 ملف فيديو، الطول $2، $4×$5 بكسل، $3',
-	'ogg-long-multiplexed' => '(ملف Ogg مالتي بليكسد أوديو/فيديو، $1، الطول $2، $4×$5 بكسل، $3 إجمالي)',
-	'ogg-long-general' => '(ملف ميديا Ogg، الطول $2، $3)',
-	'ogg-long-error' => '(ملف Ogg غير صحيح: $1)',
+	'ogg-long-multiplexed' => 'ملف Ogg مالتي بليكسد أوديو/فيديو، $1، الطول $2، $4×$5 بكسل، $3 إجمالي',
+	'ogg-long-general' => 'ملف ميديا Ogg، الطول $2، $3',
+	'ogg-long-error' => 'ملف Ogg غير صحيح: $1',
 	'ogg-play' => 'شغّل',
 	'ogg-pause' => 'ألبث',
 	'ogg-stop' => 'أوقف',
@@ -921,7 +921,7 @@ $messages['diq'] = array(
 	'ogg-long-general' => 'Ogg dosyaya medyay, dergey $2, $3 ya',
 	'ogg-long-error' => 'dosyaya oggi yo nemeqbul: $1',
 	'ogg-play' => 'Bıcın',
-	'ogg-pause' => 'vındarn',
+	'ogg-pause' => 'Vındarnê',
 	'ogg-stop' => 'vındarn',
 	'ogg-play-video' => "video bıd' kaykerdış",
 	'ogg-play-sound' => "veng bıd' kaykerdış",
@@ -2911,6 +2911,17 @@ Download <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_down
 	'ogg-desc-link' => 'Over dit bestand',
 	'ogg-oggThumb-version' => 'OggHandler vereist oggThumb versie $1 of hoger.',
 	'ogg-oggThumb-failed' => 'oggThumb kon geen miniatuurafbeelding aanmaken.',
+);
+
+/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+ * @author Siebrand
+ */
+$messages['nl-informal'] = array(
+	'ogg-no-player' => 'Je systeem heeft geen van de ondersteunde mediaspelers.
+Installeer <a href="http://www.java.com/nl/download/manual.jsp">Java</a>.',
+	'ogg-no-xiphqt' => 'Het lijkt erop dat je de component XiphQT voor QuickTime niet hebt.
+QuickTime kan Ogg-bestanden niet afspelen zonder deze component.
+Download <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">XiphQT</a> of kies een andere speler.',
 );
 
 /** Norwegian Nynorsk (‪norsk (nynorsk)‬)
