@@ -3479,6 +3479,9 @@ $messages['sa'] = array(
 	'ogg-play-sound' => 'शब्दस्य प्रवर्तनम्',
 	'ogg-no-player' => 'क्षम्यताम्, भवतः व्यवस्थायाम् अनुकूलचालकतन्त्रांशः कोपि न विद्यते ।
 कृपया <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">चालकमेकम् उपारोप्यताम्</a> ।',
+	'ogg-no-xiphqt' => 'भवत्सकाशे QuickTime निमित्तं XiphQT घटकं न विद्यते इति भाति ।
+अनेन घटकेन विना QuickTime, Ogg सञ्चिकानां चालने असमर्थं भवति ।
+कृपया <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">XiphQT अवारोप्यताम् </a> अथवा अन्यः चालकः चेतव्यः ।',
 	'ogg-player-videoElement' => 'मूलगवेषकसमर्थनम्',
 	'ogg-player-oggPlugin' => 'गवेशकप्लगिन्',
 	'ogg-player-thumbnail' => 'स्थिरचित्रमात्रम्',
