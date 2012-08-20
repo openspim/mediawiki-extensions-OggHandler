@@ -60,6 +60,7 @@ Please <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_downlo
  * @author Jon Harald Søby
  * @author Lloffiwr
  * @author Meno25
+ * @author Minh Nguyen
  * @author Mormegil
  * @author Purodha
  * @author Siebrand
@@ -76,6 +77,7 @@ Parameters are:
 * $1 file codec, f.e. Vorbis, Speex
 * $2 file duration, f.e. 1m34s
 * $3 file sampling rate, f.e. 97kbps',
+	'ogg-long-multiplexed' => 'Start with a lowercase letter, unless the first word is “Ogg”.',
 	'ogg-play' => '{{Identical|Play}}',
 	'ogg-player-videoElement' => 'Message used in JavaScript. 
 
@@ -4371,7 +4373,7 @@ $messages['vi'] = array(
 	'ogg-short-general' => 'Tập tin Ogg $1, $2',
 	'ogg-long-audio' => 'Tập tin âm thanh Ogg $1, dài $2, $3',
 	'ogg-long-video' => 'tập tin video Ogg $1, dài $2, $4×$5 điểm ảnh, $3',
-	'ogg-long-multiplexed' => 'Tập tin Ogg có âm thanh và video ghép kênh, $1, dài $2, $4×$5 điểm ảnh, $3 tất cả',
+	'ogg-long-multiplexed' => 'tập tin Ogg có âm thanh và video ghép kênh, $1, dài $2, $4×$5 điểm ảnh, $3 tất cả',
 	'ogg-long-general' => 'Tập tin phương tiện Ogg, dài $2, $3',
 	'ogg-long-error' => 'Tập tin Ogg có lỗi: $1',
 	'ogg-play' => 'Chơi',
