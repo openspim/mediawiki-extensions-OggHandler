@@ -606,7 +606,7 @@ var wgOggPlayer = {
 	'embedVlcActiveX' : function ( elt, params ) {
 		var id = elt.id + "_obj";
 
-		var html = 
+		elt.innerHTML =
 			'<div><object id=' + this.hq( id ) + 
 			' classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921"' + 
 			' codebase="http://downloads.videolan.org/pub/videolan/vlc/latest/win32/axvlc.cab#Version=0,8,6,0"' + 
@@ -616,7 +616,6 @@ var wgOggPlayer = {
 			">" + 
 			'<param name="mrl" value=' + this.hq( params.videoUrl ) + '/>' + 
 			'</object></div>';
-		elt.innerHTML += html;
 
 		var videoElt = document.getElementById( id );
 

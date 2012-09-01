@@ -410,9 +410,9 @@ class OggHandler extends MediaHandler {
 			if ( count( $lines ) > 0
 				&& preg_match( '/invalid option -- \'n\'$/', $lines[0] ) )
 			{
-				return wfMsgForContent( 'ogg-oggThumb-version', '0.9' );
+				return wfMessage( 'ogg-oggThumb-version', '0.9' )->inContentLanguage()->text();
 			} else {
-				return wfMsgForContent( 'ogg-oggThumb-failed' );
+				return wfMessage( 'ogg-oggThumb-failed' )->inContentLanguage()->text();
 			}
 		}
 		return true;
@@ -477,8 +477,8 @@ class OggHandler extends MediaHandler {
 		} else {
 			$msg = 'ogg-short-general';
 		}
-		return wfMsg( $msg, implode( '/', $streamTypes ),
-			$wgLang->formatTimePeriod( $this->getLength( $file ) ) );
+		return wfMessage( $msg, implode( '/', $streamTypes ),
+			$wgLang->formatTimePeriod( $this->getLength( $file ) ) )->text();
 	}
 
 	/**
@@ -491,7 +491,7 @@ class OggHandler extends MediaHandler {
 		$streamTypes = $this->getStreamTypes( $file );
 		if ( !$streamTypes ) {
 			$unpacked = $this->unpackMetadata( $file->getMetadata() );
-			return wfMsg( 'ogg-long-error', $unpacked['error']['message'] );
+			return wfMessage( 'ogg-long-error', $unpacked['error']['message'] )->text();
 		}
 		if ( array_intersect( $streamTypes, $wgOggVideoTypes ) ) {
 			if ( array_intersect( $streamTypes, $wgOggAudioTypes ) ) {
@@ -516,12 +516,15 @@ class OggHandler extends MediaHandler {
 			}
 		}
 		$bitrate = $length == 0 ? 0 : $size / $length * 8;
-		return wfMsg( $msg, implode( '/', $streamTypes ),
+		return wfMessage(
+			$msg,
+			implode( '/', $streamTypes ),
 			$wgLang->formatTimePeriod( $length ),
-			$wgLang->formatBitrate( $bitrate ),
-			$wgLang->formatNum( $file->getWidth() ),
-			$wgLang->formatNum( $file->getHeight() )
-		);
+			$wgLang->formatBitrate( $bitrate )
+		)->numParams(
+			$file->getWidth(),
+			$file->getHeight()
+		)->text();
 	}
 
 	/**
@@ -531,9 +534,13 @@ class OggHandler extends MediaHandler {
 	function getDimensionsString( $file ) {
 		global $wgLang;
 		if ( $file->getWidth() ) {
-			return wfMsg( 'video-dims', $wgLang->formatTimePeriod( $this->getLength( $file ) ),
-				$wgLang->formatNum( $file->getWidth() ),
-				$wgLang->formatNum( $file->getHeight() ) );
+			return wfMessage(
+				'video-dims',
+				$wgLang->formatTimePeriod( $this->getLength( $file ) )
+			)->numParams(
+				$file->getWidth(),
+				$file->getHeight()
+			)->text();
 		} else {
 			return $wgLang->formatTimePeriod( $this->getLength( $file ) );
 		}
@@ -563,6 +570,7 @@ class OggHandler extends MediaHandler {
 			'ogg-player-totem', 'ogg-player-kaffeine', 'ogg-player-kmplayer', 'ogg-player-mplayerplug-in',
 			'ogg-player-thumbnail', 'ogg-player-selected', 'ogg-use-player', 'ogg-more', 'ogg-download',
 			'ogg-desc-link', 'ogg-dismiss', 'ogg-player-soundthumb', 'ogg-no-xiphqt' );
+		// @todo FIXME: Use wfMessage().
 		$msgValues = array_map( 'wfMsg', $msgNames );
 		$jsMsgs = Xml::encodeJsVar( (object)array_combine( $msgNames, $msgValues ) );
 		$cortadoUrl = $wgCortadoJarFile;
@@ -694,7 +702,7 @@ class OggTransformOutput extends MediaTransformOutput {
 		$showDescIcon = false;
 
 		if ( $this->isVideo ) {
-			$msgStartPlayer = wfMsg( 'ogg-play-video' );
+			$msgStartPlayer = wfMessage( 'ogg-play-video' )->text();
 			$imgAttribs = array(
 				'src' => $this->url,
 				'width' => $width,
@@ -718,7 +726,7 @@ class OggTransformOutput extends MediaTransformOutput {
 				$showDescIcon = !$this->noIcon;
 				//$thumbDivAttribs = array( 'style' => 'text-align: right;' );
 			}
-			$msgStartPlayer = wfMsg( 'ogg-play-sound' );
+			$msgStartPlayer = wfMessage( 'ogg-play-sound' )->text();
 			$playerHeight = 35;
 		}
 
@@ -735,7 +743,7 @@ class OggTransformOutput extends MediaTransformOutput {
 					'height' => 22,
 					'alt' => $alt,
 				);
-				$linkAttribs['title'] = wfMsg( 'ogg-desc-link' );
+				$linkAttribs['title'] = wfMessage( 'ogg-desc-link' )->text();
 				$descIcon = Xml::tags( 'a', $linkAttribs,
 					Xml::element( 'img', $imgAttribs ) );
 				$thumb = '';
