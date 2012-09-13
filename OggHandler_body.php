@@ -658,25 +658,28 @@ EOT
 	}
 }
 
-class OggTransformOutput extends MediaTransformOutput {
+/**
+ * Generic player (not MediaHandler dependent) for "Score" extension support
+ */
+class OggHandlerPlayer {
 	static $serial = 0;
 
-	/**
-	 * @var File
-	 */
-	var $file;
+	var $params;
 
-	function __construct( $file, $videoUrl, $thumbUrl, $width, $height, $length, $isVideo,
-		$path, $noIcon = false ) {
-		$this->file = $file;
-		$this->videoUrl = $videoUrl;
-		$this->url = $thumbUrl;
-		$this->width = round( $width );
-		$this->height = round( $height );
-		$this->length = round( $length );
-		$this->isVideo = $isVideo;
-		$this->path = $path;
-		$this->noIcon = $noIcon;
+	/**
+	 * @param $params Associative array of parameters:
+	 *    - type: "audio" or "video"
+	 *    - defaultAlt: The default "alt" attribute, when not overridden by 
+	 *      $options pased to toHTML()
+	 *    - videoUrl: The Ogg file URL
+	 *    - thumbUrl: The URL of the thumbnail (or false)
+	 *    - width: The width of the player
+	 *    - height: The height of the player (zero for audio)
+	 *    - length: The length in seconds of the Ogg file
+	 *    - showIcon: Set to true to show a description icon
+	 */
+	function __construct( $params ) {
+		$this->params = $params;
 	}
 
 	/**
@@ -689,27 +692,27 @@ class OggTransformOutput extends MediaTransformOutput {
 			throw new MWException( __METHOD__ .' called in the old style' );
 		}
 
-		OggTransformOutput::$serial++;
+		self::$serial++;
 
-		$url = wfExpandUrl( $this->videoUrl, PROTO_RELATIVE );
+		$url = wfExpandUrl( $this->params['videoUrl'], PROTO_RELATIVE );
 		// Normalize values
-		$length = floatval( $this->length );
-		$width = intval( $this->width );
-		$height = intval( $this->height );
+		$length = floatval( $this->params['length'] );
+		$width = intval( $this->params['width'] );
+		$height = intval( $this->params['height'] );
 
-		$alt = empty( $options['alt'] ) ? $this->file->getTitle()->getText() : $options['alt'];
+		$alt = isset( $options['alt'] ) ? $options['alt'] : '';
 		$scriptPath = OggHandler::getMyScriptPath();
 		$showDescIcon = false;
 
-		if ( $this->isVideo ) {
+		if ( $this->params['type'] === 'video' ) {
 			$msgStartPlayer = wfMessage( 'ogg-play-video' )->text();
 			$imgAttribs = array(
-				'src' => $this->url,
+				'src' => $this->params['thumbUrl'],
 				'width' => $width,
 				'height' => $height,
 				'alt' => $alt );
 			$playerHeight = $height;
-		} else {
+		} elseif ( $this->params['type'] === 'audio' ) {
 			// Sound file
 			if ( $height > 100 ) {
 				// Use a big file icon
@@ -723,18 +726,20 @@ class OggTransformOutput extends MediaTransformOutput {
 			} else {
 				 // Make an icon later if necessary
 				$imgAttribs = false;
-				$showDescIcon = !$this->noIcon;
+				$showDescIcon = $this->params['showIcon'];
 				//$thumbDivAttribs = array( 'style' => 'text-align: right;' );
 			}
 			$msgStartPlayer = wfMessage( 'ogg-play-sound' )->text();
 			$playerHeight = 35;
+		} else {
+			throw new MWException( __CLASS__.': invalid type parameter, must be audio or video' );
 		}
 
 		// Set $thumb to the thumbnail img tag, or the thing that goes where
 		// the thumbnail usually goes
 		$descIcon = false;
 		if ( !empty( $options['desc-link'] ) ) {
-			$linkAttribs = $this->getDescLinkAttribs( $alt );
+			$linkAttribs = $options['desc-link-attribs'];
 			if ( $showDescIcon ) {
 				// Make image description icon link
 				$imgAttribs = array(
@@ -764,7 +769,7 @@ class OggTransformOutput extends MediaTransformOutput {
 			}
 		}
 
-		$id = "ogg_player_" . OggTransformOutput::$serial;
+		$id = "ogg_player_" . self::$serial;
 
 		$playerParams = Xml::encodeJsVar( (object)array(
 			'id' => $id,
@@ -773,7 +778,7 @@ class OggTransformOutput extends MediaTransformOutput {
 			'height' => $playerHeight,
 			'length' => $length,
 			'linkUrl' => $linkUrl,
-			'isVideo' => $this->isVideo ) );
+			'isVideo' => $this->params['type'] === 'video' ) );
 
 		$s = Xml::tags( 'div',
 			array( 'id' => $id ),
@@ -798,6 +803,41 @@ class OggTransformOutput extends MediaTransformOutput {
 			( $descIcon ? Xml::tags( 'div', array(), $descIcon ) : '' )
 		);
 		return $s;
+	}
+}
+
+class OggTransformOutput extends MediaTransformOutput {
+	var $player;
+
+	function __construct( $file, $videoUrl, $thumbUrl, $width, $height, $length, $isVideo,
+	   		$path, $noIcon ) 
+	{
+		// Variables used by the parent class
+		$this->file = $file;
+		$this->path = $path;
+		$this->width = $width;
+		$this->height = $height;
+		$this->url = $thumbUrl;
+
+		// Variable used by this class
+		$this->player = new OggHandlerPlayer( array(
+			'defaultAlt' => $file->getTitle()->getText(),
+			'videoUrl' => $videoUrl,
+			'thumbUrl' => $thumbUrl,
+			'width' => $width,
+			'height' => $height,
+			'length' => $length,
+			'type' => $isVideo ? 'video' : 'audio',
+			'showIcon' => !$noIcon
+		) );
+	}
+
+	function toHtml( $options = array() ) {
+		$alt = empty( $options['alt'] ) ? $this->file->getTitle()->getText() : $options['alt'];
+		if ( !empty( $options['desc-link'] ) ) {
+			$options['desc-link-attribs'] = $this->getDescLinkAttribs( $alt );
+		}
+		return $this->player->toHtml( $options );
 	}
 }
 

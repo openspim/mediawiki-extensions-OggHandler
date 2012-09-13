@@ -10,6 +10,7 @@ $wgAutoloadClasses['OggHandler'] = "$oggDir/OggHandler_body.php";
 $wgAutoloadClasses['OggVideoDisplay'] = "$oggDir/OggHandler_body.php";
 $wgAutoloadClasses['OggAudioDisplay'] = "$oggDir/OggHandler_body.php";
 $wgAutoloadClasses['OggTransformOutput'] = "$oggDir/OggHandler_body.php";
+$wgAutoloadClasses['OggHandlerPlayer'] = "$oggDir/OggHandler_body.php";
 
 $wgMediaHandlers['application/ogg'] = 'OggHandler';
 if ( !in_array( 'ogg', $wgFileExtensions ) ) {
