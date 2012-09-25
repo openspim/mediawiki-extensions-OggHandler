@@ -137,12 +137,12 @@ $magicWords['ru'] = array(
 	'ogg_thumbtime' => array( 0, 'время_миниатюры=$1' ),
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬) */
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
 $magicWords['sr-ec'] = array(
 	'ogg_noicon' => array( 0, 'безиконице', 'безиконе', 'без_иконице', 'без_иконе' ),
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $magicWords['sr-el'] = array(
 	'ogg_noplayer' => array( 0, 'bez_plejera' ),
 	'ogg_noicon' => array( 0, 'bez_ikone' ),
