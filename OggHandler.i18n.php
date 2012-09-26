@@ -3757,7 +3757,7 @@ $messages['sr-ec'] = array(
 	'ogg-oggThumb-failed' => 'oggThumb не може да направи минијатуру.',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author AVRS
  * @author Michaello
  * @author Rancher
@@ -3767,11 +3767,11 @@ $messages['sr-el'] = array(
 	'ogg-short-audio' => 'Ogg $1 zvučni fajl, $2.',
 	'ogg-short-video' => 'Ogg $1 video fajl, $2.',
 	'ogg-short-general' => 'Ogg $1 medijski fajl, $2.',
-	'ogg-long-audio' => '(Ogg $1 zvučni fajl, dužina $2, $3.)',
+	'ogg-long-audio' => 'Ogg $1 zvučna datoteka, trajanje $2, $3',
 	'ogg-long-video' => 'Ogg $1 video fajl, dužina $2, $4×$5 piksela, $3.',
-	'ogg-long-multiplexed' => '(Ogg multipleksovani audio/video fajl, $1, dužina $2, $4×$5 piksela, $3 ukupno.)',
-	'ogg-long-general' => '(Ogg medijski fajl, dužina $2, $3.)',
-	'ogg-long-error' => '(Loš ogg fajl: $1.)',
+	'ogg-long-multiplexed' => 'Multipleksirani .ogg audio/video snimak, $1, trajanje $2, $4 × $5 piksela, $3',
+	'ogg-long-general' => 'Ogg medijska datoteka, trajanje $2, $3.',
+	'ogg-long-error' => 'Neispravna ogg datoteka: $1',
 	'ogg-play' => 'Pusti',
 	'ogg-pause' => 'Pauza',
 	'ogg-stop' => 'Stop',
