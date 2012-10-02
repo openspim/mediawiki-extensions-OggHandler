@@ -506,7 +506,7 @@ $messages['be'] = array(
 	'ogg-dismiss' => 'Закрыць',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author AVRS
  * @author EugeneZelenko
  * @author Jim-by
@@ -904,6 +904,14 @@ $messages['de'] = array(
 	'ogg-desc-link' => 'Über diese Datei',
 	'ogg-oggThumb-version' => 'OggHandler erfordert oggThumb in der Version $1 oder höher.',
 	'ogg-oggThumb-failed' => 'oggThumb konnte kein Miniaturbild erstellen.',
+);
+
+/** Swiss High German (Schweizer Hochdeutsch)
+ * @author Geitost
+ */
+$messages['de-ch'] = array(
+	'ogg-desc' => 'Stellt ein Steuerungsprogramm, einschliesslich einer JavaScript-gestützten Abspielsoftware, für Ogg Theora- und Ogg Vorbis-Dateien bereit.',
+	'ogg-dismiss' => 'Schliessen',
 );
 
 /** Zazaki (Zazaki)
@@ -2107,7 +2115,7 @@ QuickTime-ს არ შეუძლია Ogg ფაილების და�
 	'ogg-oggThumb-failed' => 'oggThumb-მა ვერ მოახერხა მინიატურის შექმნა.',
 );
 
-/** Kazakh (Arabic script) (‫قازاقشا (تٴوتە)‬)
+/** Kazakh (Arabic script) (قازاقشا (تٴوتە)‏)
  * @author AVRS
  */
 $messages['kk-arab'] = array(
@@ -2138,7 +2146,7 @@ $messages['kk-arab'] = array(
 	'ogg-desc-link' => 'بۇل فايل تۋرالى',
 );
 
-/** Kazakh (Cyrillic script) (‪қазақша (кирил)‬)
+/** Kazakh (Cyrillic script) (қазақша (кирил)‎)
  * @author AVRS
  */
 $messages['kk-cyrl'] = array(
@@ -2169,7 +2177,7 @@ $messages['kk-cyrl'] = array(
 	'ogg-desc-link' => 'Бұл файл туралы',
 );
 
-/** Kazakh (Latin script) (‪qazaqşa (latın)‬)
+/** Kazakh (Latin script) (qazaqşa (latın)‎)
  * @author AVRS
  */
 $messages['kk-latn'] = array(
@@ -2342,7 +2350,7 @@ udder sök Der en annder Affspellprojramm uß.',
 	'ogg-oggThumb-failed' => '<code lang="en">oggThumb</code> kunnt kei MiniBelldsche maache.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author George Animal
  * @author Ghybu
  * @author Gomada
@@ -2768,7 +2776,7 @@ $messages['nah'] = array(
 	'ogg-desc-link' => 'Inīn tlahcuilōltechcopa',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author AVRS
  * @author Danmichaelo
  * @author Laaknor
@@ -2915,7 +2923,7 @@ Download <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_down
 	'ogg-oggThumb-failed' => 'oggThumb kon geen miniatuurafbeelding aanmaken.',
 );
 
-/** ‪Nederlands (informeel)‬ (‪Nederlands (informeel)‬)
+/** Nederlands (informeel)‎ (Nederlands (informeel)‎)
  * @author Siebrand
  */
 $messages['nl-informal'] = array(
@@ -2926,7 +2934,7 @@ QuickTime kan Ogg-bestanden niet afspelen zonder deze component.
 Download <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">XiphQT</a> of kies een andere speler.',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author AVRS
  * @author Eirik
  * @author Harald Khan
@@ -3706,7 +3714,7 @@ Ju lutemi <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_dow
 	'ogg-oggThumb-failed' => 'oggThumb dështoi të krijojë parapamjen.',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author AVRS
  * @author Millosh
  * @author Rancher
@@ -4485,7 +4493,7 @@ $messages['yue'] = array(
 	'ogg-desc-link' => '關於呢個檔案',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author AVRS
  * @author Gaoxuewei
  * @author Liangent
@@ -4521,7 +4529,7 @@ $messages['zh-hans'] = array(
 	'ogg-oggThumb-failed' => 'oggThumb未能创建缩略图。',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author AVRS
  * @author Gaoxuewei
  * @author Horacewai2
