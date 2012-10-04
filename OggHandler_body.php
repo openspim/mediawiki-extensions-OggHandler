@@ -1,6 +1,6 @@
 <?php
 
-// TODO: Fix core printable stylesheet. Descendant selectors suck.
+// @todo Fix core printable stylesheet. Descendant selectors suck.
 
 class OggHandler extends MediaHandler {
 	const OGG_METADATA_VERSION = 2;
@@ -570,9 +570,11 @@ class OggHandler extends MediaHandler {
 			'ogg-player-totem', 'ogg-player-kaffeine', 'ogg-player-kmplayer', 'ogg-player-mplayerplug-in',
 			'ogg-player-thumbnail', 'ogg-player-selected', 'ogg-use-player', 'ogg-more', 'ogg-download',
 			'ogg-desc-link', 'ogg-dismiss', 'ogg-player-soundthumb', 'ogg-no-xiphqt' );
-		// @todo FIXME: Use wfMessage().
-		$msgValues = array_map( 'wfMsg', $msgNames );
-		$jsMsgs = Xml::encodeJsVar( (object)array_combine( $msgNames, $msgValues ) );
+		$msgs = array();
+		foreach ( $msgNames as $msg ) {
+			$msgs[$msg] = wfMessage( $msg )->text();
+		}
+		$jsMsgs = Xml::encodeJsVar( (object)$msgs );
 		$cortadoUrl = $wgCortadoJarFile;
 		$scriptPath = self::getMyScriptPath();
 		if( substr( $cortadoUrl, 0, 1 ) != '/'
