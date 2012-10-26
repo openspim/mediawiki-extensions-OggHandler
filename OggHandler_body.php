@@ -346,17 +346,27 @@ class OggHandler extends MediaHandler {
 	 *
 	 * @param $videoPath string
 	 * @param $dstPath string
-	 * @param $time
+	 * @param $time integer
 	 * @return bool|string Returns true on success, or an error message on failure.
 	 */
 	function runFFmpeg( $videoPath, $dstPath, $time ) {
 		global $wgFFmpegLocation;
 		wfDebug( __METHOD__." creating thumbnail at $dstPath\n" );
-		$cmd = wfEscapeShellArg( $wgFFmpegLocation ) .
-			' -y ' .
-			# FFmpeg only supports integer numbers of seconds
+		$cmd = wfEscapeShellArg( $wgFFmpegLocation ) . ' -y ';
+		/*
+		This is a workaround until ffmpegs ogg demuxer properly seeks to keyframes.
+		Seek 2 seconds before offset and seek in decoded stream after that.
+		 -ss before input seeks without decode
+		 -ss after input seeks in decoded stream
+
+		if $time < 2 seconds, decode from beginning
+		*/
+		if ( $time > 2 ) {
+			$cmd .= ' -ss ' . intval( $time - 2 ) . ' ';
+			$time = 2;
+		}
+		$cmd .= ' -i ' . wfEscapeShellArg( $videoPath ) .
 			' -ss ' . intval( $time ) . ' ' .
-			' -i ' . wfEscapeShellArg( $videoPath ) .
 			# MJPEG, that's the same as JPEG except it's supported ffmpeg
 			# No audio, one frame
 			' -f mjpeg -an -vframes 1 ' .
