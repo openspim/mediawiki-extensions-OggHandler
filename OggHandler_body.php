@@ -353,6 +353,7 @@ class OggHandler extends MediaHandler {
 		global $wgFFmpegLocation;
 		wfDebug( __METHOD__." creating thumbnail at $dstPath\n" );
 		$cmd = wfEscapeShellArg( $wgFFmpegLocation ) .
+			' -y ' .
 			# FFmpeg only supports integer numbers of seconds
 			' -ss ' . intval( $time ) . ' ' .
 			' -i ' . wfEscapeShellArg( $videoPath ) .
@@ -638,7 +639,7 @@ EOT
 
 	/**
 	 * Handler for the ExtractThumbParameters hook
-	 * 
+	 *
 	 * @param $thumbname string URL-decoded basename of URI
 	 * @param &$params Array Currently parsed thumbnail params
 	 * @return bool
@@ -671,7 +672,7 @@ class OggHandlerPlayer {
 	/**
 	 * @param $params Associative array of parameters:
 	 *    - type: "audio" or "video"
-	 *    - defaultAlt: The default "alt" attribute, when not overridden by 
+	 *    - defaultAlt: The default "alt" attribute, when not overridden by
 	 *      $options pased to toHTML()
 	 *    - videoUrl: The Ogg file URL
 	 *    - thumbUrl: The URL of the thumbnail (or false)
@@ -811,9 +812,9 @@ class OggHandlerPlayer {
 class OggTransformOutput extends MediaTransformOutput {
 	var $player;
 
-	function __construct( $file, $videoUrl, $thumbUrl, $width, $height, $length, $isVideo,
-	   		$path, $noIcon ) 
-	{
+	function __construct(
+		$file, $videoUrl, $thumbUrl, $width, $height, $length, $isVideo, $path, $noIcon
+	) {
 		// Variables used by the parent class
 		$this->file = $file;
 		$this->path = $path;
