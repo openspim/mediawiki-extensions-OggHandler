@@ -4172,6 +4172,7 @@ $messages['tpi'] = array(
 
 /** Turkish (Türkçe)
  * @author AVRS
+ * @author Emperyan
  * @author Erkan Yilmaz
  * @author Joseph
  * @author Mach
@@ -4181,7 +4182,7 @@ $messages['tpi'] = array(
 $messages['tr'] = array(
 	'ogg-desc' => 'Ogg Theora ve Vorbis dosyaları için işleyici, JavaScript oynatıcısı ile',
 	'ogg-short-audio' => 'Ogg $1 ses dosyası, $2',
-	'ogg-short-video' => 'Ogg $1 film dosyası, $2',
+	'ogg-short-video' => 'Ogg $1 video dosyası, $2',
 	'ogg-short-general' => 'Ogg $1 medya dosyası, $2',
 	'ogg-long-audio' => '(Ogg $1 ses dosyası, süre $2, $3)', # Fuzzy
 	'ogg-long-video' => 'Ogg $1 film dosyası, süre $2, $4×$5 piksel, $3',
