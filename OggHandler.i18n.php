@@ -4245,6 +4245,14 @@ $messages['tt-cyrl'] = array(
 	'ogg-oggThumb-failed' => 'oggThumb нигезендә миниатюраны ясап булмады.',
 );
 
+/** Central Atlas Tamazight (ⵜⴰⵎⴰⵣⵉⵖⵜ)
+ * @author Tifinaghes
+ */
+$messages['tzm'] = array(
+	'ogg-stop' => 'ⵙⴱⴻⴷⴷ',
+	'ogg-player-selected' => '(ⵓⴼⵔⵉⵏ)',
+);
+
 /** Ukrainian (українська)
  * @author A1
  * @author AS
