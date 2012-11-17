@@ -72,6 +72,12 @@ $magicWords['fa'] = array(
 	'ogg_noicon' => array( 0, 'بدون_شمایل' ),
 );
 
+/** Italian (italiano) */
+$magicWords['it'] = array(
+	'ogg_noicon' => array( 0, 'nessunicona' ),
+	'ogg_thumbtime' => array( 0, 'fotogramma=$1' ),
+);
+
 /** Japanese (日本語) */
 $magicWords['ja'] = array(
 	'ogg_noplayer' => array( 0, 'プレイヤー無効' ),
