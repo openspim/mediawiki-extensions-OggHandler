@@ -63,11 +63,12 @@ Please <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_downlo
  * @author Minh Nguyen
  * @author Mormegil
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'ogg-desc' => '{{desc}}',
+	'ogg-desc' => '{{desc|name=Ogg Handler|url=http://www.mediawiki.org/wiki/Extension:OggHandler}}',
 	'ogg-short-general' => 'File details for generic (non-audio, non-video) Ogg files, short version.
 Parameters are: 
 * $1 file type, e.g. Vorbis, Speex
@@ -1971,7 +1972,7 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'ogg-desc' => 'Theora および Vorbis 形式の Ogg ファイルハンドラーと JavaScript プレイヤー',
+	'ogg-desc' => 'Ogg Theora / Vorbis ファイルのハンドラーと JavaScript プレーヤー',
 	'ogg-short-audio' => 'Ogg $1 音声ファイル、$2',
 	'ogg-short-video' => 'Ogg $1 動画ファイル、$2',
 	'ogg-short-general' => 'Ogg $1 メディアファイル、$2',
@@ -1979,7 +1980,7 @@ $messages['ja'] = array(
 	'ogg-long-video' => 'Ogg $1 動画ファイル、長さ $2、$4×$5 ピクセル、$3',
 	'ogg-long-multiplexed' => 'Ogg 多重音声/動画ファイル、$1、長さ $2、$4×$5 ピクセル、全体で$3',
 	'ogg-long-general' => 'Ogg メディアファイル、長さ $2、$3',
-	'ogg-long-error' => '無効な Ogg ファイル：$1',
+	'ogg-long-error' => '無効な Ogg ファイル: $1',
 	'ogg-play' => '再生',
 	'ogg-pause' => '一時停止',
 	'ogg-stop' => '停止',
@@ -1990,9 +1991,9 @@ $messages['ja'] = array(
 	'ogg-player-videoElement' => 'ネイティブブラウザーに対応',
 	'ogg-player-oggPlugin' => 'ブラウザープラグイン',
 	'ogg-player-thumbnail' => '静止画像のみ',
-	'ogg-player-soundthumb' => 'プレイヤーなし',
+	'ogg-player-soundthumb' => 'プレーヤーなし',
 	'ogg-player-selected' => '(選択)',
-	'ogg-use-player' => 'プレイヤーを使用：',
+	'ogg-use-player' => 'プレーヤーを使用:',
 	'ogg-more' => 'その他…',
 	'ogg-dismiss' => '閉じる',
 	'ogg-download' => 'ファイルをダウンロード',
@@ -2566,7 +2567,7 @@ $messages['mk'] = array(
 	'ogg-long-video' => 'Ogg $1 видеоснимка, времетраење: $2, $4 × $5 пиксели, $3',
 	'ogg-long-multiplexed' => 'мултиплексирана Ogg аудио/видеоснимка, $1, времетраење: $2, $4 × $5 пиксели, вкупно $3',
 	'ogg-long-general' => 'Ogg снимка, времетраење: $2, $3',
-	'ogg-long-error' => 'Неважечка ogg податотека: $1',
+	'ogg-long-error' => 'Неважечка Ogg-податотека: $1',
 	'ogg-play' => 'Пушти',
 	'ogg-pause' => 'Паузирај',
 	'ogg-stop' => 'Запри',
@@ -2898,7 +2899,7 @@ $messages['nl'] = array(
 	'ogg-long-video' => 'Ogg $1 videobestand, lengte $2, $4×$5 pixels, $3',
 	'ogg-long-multiplexed' => 'Ogg gemultiplexed geluids- of videobestand, $1, lengte $2, $4×$5 pixels, $3 totaal',
 	'ogg-long-general' => 'Ogg mediabestand, lengte $2, $3',
-	'ogg-long-error' => 'Ongeldig ogg-bestand: $1',
+	'ogg-long-error' => 'Ongeldig Ogg-bestand: $1',
 	'ogg-play' => 'Afspelen',
 	'ogg-pause' => 'Pauzeren',
 	'ogg-stop' => 'Stoppen',
@@ -3402,7 +3403,7 @@ $messages['ru'] = array(
 	'ogg-long-video' => 'видео-файл Ogg $1, длительность $2, $4×$5 {{PLURAL:$5|пиксель|пикселя|пикселей}}, $3',
 	'ogg-long-multiplexed' => 'мультиплексный аудио/видео-файл Ogg, $1, длительность $2, $4×$5 {{PLURAL:$5|пиксель|пикселя|пикселей}}, $3 всего',
 	'ogg-long-general' => 'медиафайл Ogg, длительность $2, $3',
-	'ogg-long-error' => 'неправильный ogg-файл: $1',
+	'ogg-long-error' => 'неправильный Ogg-файл: $1',
 	'ogg-play' => 'Воспроизвести',
 	'ogg-pause' => 'Пауза',
 	'ogg-stop' => 'Остановить',
@@ -4544,6 +4545,7 @@ $messages['zh-hans'] = array(
  * @author Gaoxuewei
  * @author Horacewai2
  * @author Mark85296341
+ * @author Simon Shek
  * @author Waihorace
  */
 $messages['zh-hant'] = array(
@@ -4555,7 +4557,7 @@ $messages['zh-hant'] = array(
 	'ogg-long-video' => 'Ogg $1 影片檔案，長度$2，$4×$5像素，$3',
 	'ogg-long-multiplexed' => 'Ogg 多工聲音／影片檔案，$1，長度$2，$4×$5像素，共$3',
 	'ogg-long-general' => 'Ogg 媒體檔案，長度$2，$3',
-	'ogg-long-error' => '無效的 ogg 檔案：$1',
+	'ogg-long-error' => '無效的ogg檔案：$1',
 	'ogg-play' => '播放',
 	'ogg-pause' => '暫停',
 	'ogg-stop' => '停止',
