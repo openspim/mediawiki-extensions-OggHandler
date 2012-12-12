@@ -419,6 +419,23 @@ $messages['az'] = array(
 	'ogg-download' => 'Fayl yüklə',
 );
 
+/** South Azerbaijani (تورکجه)
+ * @author Amir a57
+ */
+$messages['azb'] = array(
+	'ogg-long-error' => 'اعتبارسیز آگ فایل: $1',
+	'ogg-play' => 'پخش',
+	'ogg-pause' => 'فاصیله',
+	'ogg-stop' => 'دایان',
+	'ogg-play-video' => 'ویدیو پخشی',
+	'ogg-play-sound' => 'سس پخشی',
+	'ogg-player-selected' => '(سئچیلدی)',
+	'ogg-more' => 'چوخ...',
+	'ogg-dismiss' => 'باغلا',
+	'ogg-download' => 'فایل یوکله',
+	'ogg-desc-link' => 'بو فایلا گوره',
+);
+
 /** Bashkir (башҡортса)
  * @author Haqmar
  * @author Roustammr
