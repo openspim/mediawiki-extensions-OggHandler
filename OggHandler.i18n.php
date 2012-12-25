@@ -1856,9 +1856,9 @@ Silakan <a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_downl
 $messages['ig'] = array(
 	'ogg-play' => 'Dọ',
 	'ogg-pause' => "Zùy'íké",
-	'ogg-stop' => 'Kwùshí',
+	'ogg-stop' => 'Kụ̀shí',
 	'ogg-more' => 'Ozókwá...',
-	'ogg-dismiss' => 'Mèchié',
+	'ogg-dismiss' => 'Mèchí',
 );
 
 /** Iloko (Ilokano)
@@ -2330,7 +2330,7 @@ $messages['ksh'] = array(
 	'ogg-long-video' => '<i lang="en">Ogg $1</i> Viddejodatei fum Ömfang $2 un {{PLURAL:$4|ein Pixel|$4 Pixelle|kei Pixel}} × {{PLURAL:$5|ei Pixel|$4 Pixelle|kei Pixel}}, $3',
 	'ogg-long-multiplexed' => 'Jemultipex <i lang="en">Ogg</i>Ton- un Viddejodattei, $1, fum Ömfang $2 un {{PLURAL:$4|ein Pixel|$4 Pixelle|kei Pixel}} × {{PLURAL:$5|ei Pixel|$4 Pixelle|kei Pixel}}, $3 ennsjesammp',
 	'ogg-long-general' => '<i lang="en">Ogg</i> Medijedatei fum Ömfang $2 bei $3',
-	'ogg-long-error' => 'Ene kapodde <i lang="en">Ogg</i> Datei: $1',
+	'ogg-long-error' => 'En kapodde <i lang="en">Ogg</i>-Dattei: $1',
 	'ogg-play' => 'Loßläje!',
 	'ogg-pause' => 'Aanhallde!',
 	'ogg-stop' => 'Ophüre!',
