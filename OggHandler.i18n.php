@@ -2003,7 +2003,7 @@ $messages['ja'] = array(
 	'ogg-stop' => '停止',
 	'ogg-play-video' => '動画を再生',
 	'ogg-play-sound' => '音声を再生',
-	'ogg-no-player' => '申し訳ありません、あなたのシステムには対応する再生ソフトウェアがインストールされていないようです。<a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">ここからダウンロードしてください</a>。',
+	'ogg-no-player' => '申し訳ありませんが、あなたのシステムには対応する再生ソフトウェアがインストールされていないようです。<a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">ここからダウンロードしてください</a>。',
 	'ogg-no-xiphqt' => 'QuickTime 用 XiphQT コンポーネントがインストールされていないようです。QuickTime で Ogg ファイルを再生するには、このコンポーネントが必要です。<a href="http://www.mediawiki.org/wiki/Extension:OggHandler/Client_download">ここから XiphQT をダウンロードする</a>か、別の再生ソフトをインストールしてください。',
 	'ogg-player-videoElement' => 'ネイティブブラウザーに対応',
 	'ogg-player-oggPlugin' => 'ブラウザープラグイン',
