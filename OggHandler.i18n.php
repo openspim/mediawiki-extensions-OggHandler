@@ -4271,6 +4271,20 @@ $messages['tzm'] = array(
 	'ogg-player-selected' => '(ⵓⴼⵔⵉⵏ)',
 );
 
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'ogg-play' => 'چال',
+	'ogg-pause' => 'ۋاقىتلىق توختا',
+	'ogg-stop' => 'توختا',
+	'ogg-play-sound' => 'ئاۋاز قوي',
+	'ogg-player-vlc-mozilla' => 'VLC',
+	'ogg-player-kmplayer' => 'KMPlayer',
+	'ogg-player-kaffeine' => 'Kaffeine',
+	'ogg-dismiss' => 'ياپ',
+);
+
 /** Ukrainian (українська)
  * @author A1
  * @author AS
