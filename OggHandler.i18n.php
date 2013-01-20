@@ -4359,17 +4359,18 @@ $messages['ur'] = array(
 /** vèneto (vèneto)
  * @author AVRS
  * @author Candalua
+ * @author GatoSelvadego
  */
 $messages['vec'] = array(
 	'ogg-desc' => 'Gestor par i file Ogg Theora e Vorbis, con riprodutor JavaScript',
 	'ogg-short-audio' => 'File audio Ogg $1, $2',
 	'ogg-short-video' => 'File video Ogg $1, $2',
 	'ogg-short-general' => 'File multimedial Ogg $1, $2',
-	'ogg-long-audio' => '(File audio Ogg $1, durata $2, $3)', # Fuzzy
+	'ogg-long-audio' => 'File audio Ogg $1, durata $2, $3',
 	'ogg-long-video' => 'File video Ogg $1, durata $2, dimensioni $4×$5 pixel, $3',
-	'ogg-long-multiplexed' => '(File audio/video multiplexed Ogg $1, durata $2, dimensioni $4×$5 pixel, conplessivamente $3)', # Fuzzy
-	'ogg-long-general' => '(File multimedial Ogg, durata $2, $3)', # Fuzzy
-	'ogg-long-error' => '(File ogg mìa valido: $1)', # Fuzzy
+	'ogg-long-multiplexed' => 'File audio/video multiplexed Ogg $1, durata $2, dimension $4×$5 pixel, conplesivamente $3',
+	'ogg-long-general' => 'File multimedial Ogg, durata $2, $3',
+	'ogg-long-error' => 'File ogg mìa vałido: $1',
 	'ogg-play' => 'Riprodusi',
 	'ogg-pause' => 'Pausa',
 	'ogg-stop' => 'Fèrma',
