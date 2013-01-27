@@ -2864,7 +2864,7 @@ $messages['nds'] = array(
 	'ogg-desc-link' => 'Över disse Datei',
 );
 
-/** Nedersaksisch (Nedersaksisch)
+/** Nedersaksies (Nedersaksies)
  * @author AVRS
  * @author Servien
  */
