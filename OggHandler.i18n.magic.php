@@ -111,7 +111,7 @@ $magicWords['mr'] = array(
 	'ogg_thumbtime' => array( 0, 'थंबटाइम=$1', 'इवलावेळ=$1', 'thumbtime=$1' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $magicWords['nds-nl'] = array(
 	'ogg_noplayer' => array( 0, 'gienspeuler', 'geenspeler' ),
 	'ogg_noicon' => array( 0, 'gienicoon', 'geenicoon' ),
