@@ -566,12 +566,15 @@ var wgOggPlayer = {
 				' id=' + this.hq( id ) + 
 				' width=' + this.hq( params.width ) + 
 				' height=' + this.hq( (params.height>0)?params.height:this.controlsHeightGuess ) + 
-				' src=' + this.hq( params.videoUrl ) +
 				' autoplay';
 		if ( !this.safariControlsBug ) {
 			html += ' controls';
 		}
-		html += ' ></' + tagName + '></div>';
+		html += ' >';
+		if ( typeof params.mp4Url != 'undefined' && params.mp4Url != false )
+			html += '<source src=' + this.hq( params.mp4Url ) + " type='video/mp4; codecs=\"avc1.42E01E, mp4a.40.2\"' />";
+		html += '<source src=' + this.hq( params.videoUrl ) + " type='video/ogg; codecs=\"theora, vorbis\"' \>";
+		html += '</' + tagName + '></div>';
 		elt.innerHTML = html;
 	},
 
