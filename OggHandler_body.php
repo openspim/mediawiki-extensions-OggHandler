@@ -393,11 +393,12 @@ class OggHandler extends MediaHandler {
 		*/
 		if ( $time === 'mp4' ) {
 			$cmd .= ' -i ' . wfEscapeShellArg( $videoPath ) .
-				' -vcodec libx264 -acodec libfaac -ac 2 -ar 48000';
+				' -vcodec libx264 -acodec aac -ac 2 -ar 48000 -strict experimental ';
 			if ( preg_match( '/ffmpg$/', $wgFFmpegLocation ) )
 				$cmd .= ' -vpre slow -vpre ipod640 -sameq ';
 			else
-				$cmd .= ' -pre slow -pre ipod640 -same_quant ';
+				//$cmd .= ' -pre libx264-slow -pre libx264-ipod640 -same_quant ';
+				$cmd .= ' -same_quant ';
 		} else {
 			if ( $time > 2 ) {
 				$cmd .= ' -ss ' . intval( $time - 2 ) . ' ';
