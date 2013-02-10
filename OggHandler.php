@@ -22,6 +22,9 @@ if ( !in_array( 'ogv', $wgFileExtensions ) ) {
 if ( !in_array( 'oga', $wgFileExtensions ) ) {
 	$wgFileExtensions[] = 'oga';
 }
+if ( !in_array( 'mp4', $wgFileExtensions ) ) {
+	$wgFileExtensions[] = 'mp4';
+}
 ini_set( 'include_path',
 	"$oggDir/PEAR/File_Ogg" .
 	PATH_SEPARATOR .

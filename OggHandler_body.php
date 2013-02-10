@@ -284,6 +284,15 @@ class OggHandler extends MediaHandler {
 		$noIcon = isset( $params['noicon'] );
 		$targetFileUrl = $file->getURL();
 
+		$mp4File = false;
+		$fileName = $file->getTitle()->getText();
+		if ( preg_match( '/\.ogv$/', $fileName ) ) {
+			$mp4FileName = preg_replace( '/\.ogv$/', '.mp4', $fileName );
+			$mp4File = wfFindFile( $mp4FileName );
+			if ( $mp4File === false )
+				$mp4File = wfLocalFile( $mp4FileName );
+		}
+
 		if ( !$noPlayer ) {
 			// Hack for miscellaneous callers
 			global $wgOut;
@@ -312,7 +321,7 @@ class OggHandler extends MediaHandler {
 		}
 
 		if ( $flags & self::TRANSFORM_LATER ) {
-			return new OggVideoDisplay( $file, $targetFileUrl, $dstUrl, $width, $height, $length, $dstPath, $noIcon );
+			return new OggVideoDisplay( $file, $targetFileUrl, $mp4File === false ? false : $mp4File->getURL(), $dstUrl, $width, $height, $length, $dstPath, $noIcon );
 		}
 
 		$thumbTime = false;
@@ -333,7 +342,26 @@ class OggHandler extends MediaHandler {
 			$status = $this->runFFmpeg( $file->getLocalRefPath(), $dstPath, $thumbTime );
 		}
 		if ( $status === true ) {
-			return new OggVideoDisplay( $file, $file->getURL(), $dstUrl, $width, $height,
+			if ( $mp4File !== false ) {
+				$mp4Path = $mp4File->getLocalRefPath();
+				$lockPath = $mp4Path . '.lock.mp4';
+				if ( !file_exists( $mp4Path ) && !file_exists( $lockPath ) ) {
+					wfMkdirParents( dirname( $lockPath ), null, __METHOD__ );
+
+					$status = $this->runFFmpeg( $file->getLocalRefPath(), $lockPath, 'mp4' );
+					if ( $status !== true ) {
+						if ( strstr( $status, 'Cannot allocate' ) >= 0 )
+							$status .= "\nMaybe you need to increase \$wgMaxShellMemory?";
+						return new MediaTransformError( 'thumbnail_error', $width, $height, $status );
+					}
+					$mp4File->upload($lockPath,
+						"Generated from $fileName",
+						"Original file: [[:File:$fileName]]",
+						File::DELETE_SOURCE,
+						null, false, $GLOBALS['wgUser']);
+				}
+			}
+			return new OggVideoDisplay( $file, $file->getURL(), $mp4File ? $mp4File->getURL() : false, $dstUrl, $width, $height,
 				$length, $dstPath );
 		} else {
 			return new MediaTransformError( 'thumbnail_error', $width, $height, $status );
@@ -343,6 +371,8 @@ class OggHandler extends MediaHandler {
 	/**
 	 * Run FFmpeg to generate a still image from a video file, using a frame close
 	 * to the given number of seconds from the start.
+	 *
+	 * If the given time is 'mp4', generate an MP4 file instead.
 	 *
 	 * @param $videoPath string
 	 * @param $dstPath string
@@ -361,16 +391,25 @@ class OggHandler extends MediaHandler {
 
 		if $time < 2 seconds, decode from beginning
 		*/
-		if ( $time > 2 ) {
-			$cmd .= ' -ss ' . intval( $time - 2 ) . ' ';
-			$time = 2;
+		if ( $time === 'mp4' ) {
+			$cmd .= ' -i ' . wfEscapeShellArg( $videoPath ) .
+				' -vcodec libx264 -acodec libfaac -ac 2 -ar 48000';
+			if ( preg_match( '/ffmpg$/', $wgFFmpegLocation ) )
+				$cmd .= ' -vpre slow -vpre ipod640 -sameq ';
+			else
+				$cmd .= ' -pre slow -pre ipod640 -same_quant ';
+		} else {
+			if ( $time > 2 ) {
+				$cmd .= ' -ss ' . intval( $time - 2 ) . ' ';
+				$time = 2;
+			}
+			$cmd .= ' -i ' . wfEscapeShellArg( $videoPath ) .
+				' -ss ' . intval( $time ) . ' ' .
+				# MJPEG, that's the same as JPEG except it's supported ffmpeg
+				# No audio, one frame
+				' -f mjpeg -an -vframes 1 ';
 		}
-		$cmd .= ' -i ' . wfEscapeShellArg( $videoPath ) .
-			' -ss ' . intval( $time ) . ' ' .
-			# MJPEG, that's the same as JPEG except it's supported ffmpeg
-			# No audio, one frame
-			' -f mjpeg -an -vframes 1 ' .
-			wfEscapeShellArg( $dstPath ) . ' 2>&1';
+		$cmd .= wfEscapeShellArg( $dstPath ) . ' 2>&1';
 
 		$retval = 0;
 		$returnText = wfShellExec( $cmd, $retval );
@@ -685,6 +724,7 @@ class OggHandlerPlayer {
 	 *    - defaultAlt: The default "alt" attribute, when not overridden by
 	 *      $options pased to toHTML()
 	 *    - videoUrl: The Ogg file URL
+	 *    - mp4Url: The MP4 file URL
 	 *    - thumbUrl: The URL of the thumbnail (or false)
 	 *    - width: The width of the player
 	 *    - height: The height of the player (zero for audio)
@@ -708,6 +748,7 @@ class OggHandlerPlayer {
 		self::$serial++;
 
 		$url = wfExpandUrl( $this->params['videoUrl'], PROTO_RELATIVE );
+		$mp4Url = $this->params['mp4Url'] ? wfExpandUrl( $this->params['mp4Url'], PROTO_RELATIVE ) : false;
 		// Normalize values
 		$length = floatval( $this->params['length'] );
 		$width = intval( $this->params['width'] );
@@ -787,6 +828,7 @@ class OggHandlerPlayer {
 		$playerParams = Xml::encodeJsVar( (object)array(
 			'id' => $id,
 			'videoUrl' => $url,
+			'mp4Url' => $mp4Url,
 			'width' => $width,
 			'height' => $playerHeight,
 			'length' => $length,
@@ -823,7 +865,7 @@ class OggTransformOutput extends MediaTransformOutput {
 	var $player;
 
 	function __construct(
-		$file, $videoUrl, $thumbUrl, $width, $height, $length, $isVideo, $path, $noIcon
+		$file, $videoUrl, $mp4Url, $thumbUrl, $width, $height, $length, $isVideo, $path, $noIcon
 	) {
 		// Variables used by the parent class
 		$this->file = $file;
@@ -836,6 +878,7 @@ class OggTransformOutput extends MediaTransformOutput {
 		$this->player = new OggHandlerPlayer( array(
 			'defaultAlt' => $file->getTitle()->getText(),
 			'videoUrl' => $videoUrl,
+			'mp4Url' => $mp4Url,
 			'thumbUrl' => $thumbUrl,
 			'width' => $width,
 			'height' => $height,
@@ -855,13 +898,13 @@ class OggTransformOutput extends MediaTransformOutput {
 }
 
 class OggVideoDisplay extends OggTransformOutput {
-	function __construct( $file, $videoUrl, $thumbUrl, $width, $height, $length, $path, $noIcon=false ) {
-		parent::__construct( $file, $videoUrl, $thumbUrl, $width, $height, $length, true, $path, false );
+	function __construct( $file, $videoUrl, $mp4Url, $thumbUrl, $width, $height, $length, $path, $noIcon=false ) {
+		parent::__construct( $file, $videoUrl, $mp4Url, $thumbUrl, $width, $height, $length, true, $path, false );
 	}
 }
 
 class OggAudioDisplay extends OggTransformOutput {
 	function __construct( $file, $videoUrl, $width, $height, $length, $path, $noIcon = false ) {
-		parent::__construct( $file, $videoUrl, false, $width, $height, $length, false, $path, $noIcon );
+		parent::__construct( $file, $videoUrl, false, false, $width, $height, $length, false, $path, $noIcon );
 	}
 }
