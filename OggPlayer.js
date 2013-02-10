@@ -219,7 +219,8 @@ var wgOggPlayer = {
 				try {
 					var video = document.createElement( 'video' );
 					if ( video.canPlayType 
-						&& video.canPlayType( 'video/ogg;codecs="theora,vorbis"' ) == 'probably' )
+						&& (video.canPlayType( 'video/ogg;codecs="theora,vorbis"' ) == 'probably' ||
+						    video.canPlayType( 'video/mp4; codecs="avc1.42E01E, mp4a.40.2"' ) == 'probably' ) )
 					{
 						this.clientSupports['videoElement'] = true;
 					} else if ( this.supportedMimeType( 'video/ogg' ) ) {
